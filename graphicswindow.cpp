@@ -125,6 +125,8 @@ void graphicsWindow::updatePlot()
 
     int rowCount = ui->tableWidget->rowCount();
     int columnCount = ui->tableWidget->columnCount();
+    QVector<QColor> colors = {Qt::red, Qt::green, Qt::blue, Qt::cyan, Qt::magenta, Qt::yellow, Qt::darkRed, Qt::darkGreen, Qt::darkBlue, Qt::darkCyan, Qt::darkMagenta, Qt::darkYellow};
+
 
     // Проходимо через всі рядки таблиці
     for (int i = 0; i < rowCount; ++i)
@@ -143,6 +145,7 @@ void graphicsWindow::updatePlot()
 
         ui->customPlot->addGraph(); // Додаємо новий графік
         ui->customPlot->graph(i)->setData(x, y); // Встановлюємо дані для графіку
+        ui->customPlot->graph(i)->setPen(QPen(colors[i % colors.size()]));
     }
 
     redraw();
