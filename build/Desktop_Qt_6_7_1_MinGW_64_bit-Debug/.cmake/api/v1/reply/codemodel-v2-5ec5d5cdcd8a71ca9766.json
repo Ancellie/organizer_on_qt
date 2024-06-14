@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-54f0fd2bafaec8ceac16.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "organizer_on_qt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "organizer_on_qt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-organizer_on_qt-Debug-c321dccdc6ad3dda44d3.json",
+					"name" : "organizer_on_qt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "organizer_on_qt_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-organizer_on_qt_autogen-Debug-16896004da6d01e0cf98.json",
+					"name" : "organizer_on_qt_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "organizer_on_qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-organizer_on_qt_autogen_timestamp_deps-Debug-1c988b27493e79cd6fa3.json",
+					"name" : "organizer_on_qt_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+		"source" : "D:/qt/organizer_on_qt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

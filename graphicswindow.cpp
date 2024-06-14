@@ -1,6 +1,6 @@
 #include "graphicswindow.h"
-#include "ui_graphicswindow.h"
 #include "mainwindow.h"
+#include "ui_graphicswindow.h"
 
 graphicsWindow::graphicsWindow(QWidget *parent)
     : QWidget(parent)
@@ -23,4 +23,3 @@ void graphicsWindow::on_pushButton_clicked()
     // Закриваємо вікно логіну (опціонально)
     this->close();
 }
-

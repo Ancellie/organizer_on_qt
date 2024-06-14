@@ -1,13 +1,13 @@
 #include "registerwindow.h"
-#include "ui_registerwindow.h"
-#include "loginwindow.h"
 #include <QFile>
-#include <QTextStream>
 #include <QMessageBox>
+#include <QTextStream>
+#include "loginwindow.h"
+#include "ui_registerwindow.h"
 
-registerWindow::registerWindow(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::registerWindow)
+registerWindow::registerWindow(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::registerWindow)
 {
     ui->setupUi(this);
 }

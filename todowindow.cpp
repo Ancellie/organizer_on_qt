@@ -1,6 +1,6 @@
 #include "todowindow.h"
-#include "ui_todowindow.h"
 #include "mainwindow.h"
+#include "ui_todowindow.h"
 
 todoWindow::todoWindow(QWidget *parent)
     : QWidget(parent)
@@ -22,5 +22,10 @@ void todoWindow::on_backButton_clicked()
     mainwindow->show();
     // Закриваємо вікно логіну (опціонально)
     this->close();
+}
+
+void todoWindow::on_addButton_clicked()
+{
+
 }
 
