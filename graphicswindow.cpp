@@ -7,6 +7,9 @@ graphicsWindow::graphicsWindow(QWidget *parent)
     , ui(new Ui::graphicsWindow)
 {
     ui->setupUi(this);
+
+
+
 }
 
 graphicsWindow::~graphicsWindow()
@@ -22,5 +25,16 @@ void graphicsWindow::on_pushButton_clicked()
     mainwindow->show();
     // Закриваємо вікно логіну (опціонально)
     this->close();
+}
+
+
+void graphicsWindow::on_tableWidget_cellChanged(int row, int column)
+{
+
+}
+
+void graphicsWindow::redraw() {
+    ui->customPlot->rescaleAxes();
+    ui->customPlot->replot();
 }
 

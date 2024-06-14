@@ -7,6 +7,8 @@ todoWindow::todoWindow(QWidget *parent)
     , ui(new Ui::todoWindow)
 {
     ui->setupUi(this);
+
+
 }
 
 todoWindow::~todoWindow()

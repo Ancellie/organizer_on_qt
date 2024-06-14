@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "loginwindow.h"
 #include "ui_mainwindow.h"
-#include "notesWindow.h"
+#include "noteswindow.h"
 #include "todowindow.h"
 #include "graphicswindow.h"
 

@@ -27,17 +27,18 @@ void registerWindow::on_loginButton_clicked()
     this->close();
 }
 
-void registerWindow::saveUser(const QString &username, const QString &password)
+bool registerWindow::saveUser(const QString &username, const QString &password)
 {
     QFile file("users.txt");
     if (!file.open(QIODevice::Append | QIODevice::Text)) {
         QMessageBox::warning(this, "Error", "Failed to open file.");
-        return;
+        return false;
     }
 
     QTextStream out(&file);
     out << username << "," << password << "\n";
     file.close();
+    return true;
 }
 
 void registerWindow::on_registerButton_clicked()
@@ -53,7 +54,7 @@ void registerWindow::on_registerButton_clicked()
     if (userExists(username)) {
         QMessageBox::warning(this, "Error", "User already exists.");
     } else {
-        saveUser(username, password);
+        if (!saveUser(username, password)) return;
         QMessageBox::information(this, "Success", "User registered successfully!");
         // Optionally, close the registration window and open the login window
         loginWindow *logWindow = new loginWindow();

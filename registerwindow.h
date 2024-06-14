@@ -24,7 +24,7 @@ private slots:
 
 private:
     Ui::registerWindow *ui;
-    void saveUser(const QString &username, const QString &password);
+    bool saveUser(const QString &username, const QString &password);
     bool userExists(const QString &username);
 };
 

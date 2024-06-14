@@ -1,0 +1,148 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-7912cc58c2cd61d07343.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "QCustomPlot-library",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-QCustomPlot-library-Debug-1e971b21dc5277c0074d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "QCustomPlot-library"
+				},
+				{
+					"build" : "QCustomPlot-library/lib",
+					"jsonFile" : "directory-QCustomPlot-library.lib-Debug-911a14e96df153a7b64b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "QCustomPlot-library/lib",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "organizer_maks",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "qcustomplotroot",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "qcustomplot",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "organizer_maks::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-organizer_maks-Debug-0cfbf85a0594ec8b4eb3.json",
+					"name" : "organizer_maks",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "organizer_maks_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-organizer_maks_autogen-Debug-1eeabd5b883ca2139ffb.json",
+					"name" : "organizer_maks_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "qcustomplot::@fc532ac5826d76d47071",
+					"jsonFile" : "target-qcustomplot-Debug-db26ba69c780cf115ac8.json",
+					"name" : "qcustomplot",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "qcustomplot_autogen::@fc532ac5826d76d47071",
+					"jsonFile" : "target-qcustomplot_autogen-Debug-227ea5c345e62174153c.json",
+					"name" : "qcustomplot_autogen",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug",
+		"source" : "/home/maksym/projects/help/organizer_on_qt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
