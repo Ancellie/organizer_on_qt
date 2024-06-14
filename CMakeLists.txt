@@ -39,6 +39,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         noteswindow.h noteswindow.cpp noteswindow.ui
         noteswindow.h noteswindow.cpp noteswindow.ui
         ctodolist.h ctodolist.cpp
+        userdata.h userdata.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET organizer_on_qt APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

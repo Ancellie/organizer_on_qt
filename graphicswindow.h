@@ -2,7 +2,6 @@
 #define GRAPHICSWINDOW_H
 
 #include <QWidget>
-#include "qcustomplot.h"
 
 namespace Ui {
 class graphicsWindow;
@@ -21,9 +20,21 @@ private slots:
 
     void on_tableWidget_cellChanged(int row, int column);
     void redraw();
+    void updatePlot();
+    void saveTable();
+    void loadTable();
+
+    void on_removeButton_clicked();
+
+    void on_addButton_clicked();
+
+    void on_graphicsWindow_destroyed();
 
 private:
     Ui::graphicsWindow *ui;
+
+protected:
+    void closeEvent(QCloseEvent *event) override;
 };
 
 #endif // GRAPHICSWINDOW_H

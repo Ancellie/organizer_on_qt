@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/organizer_on_qt.dir/registerwindow.cpp.o.d"
   "CMakeFiles/organizer_on_qt.dir/todowindow.cpp.o"
   "CMakeFiles/organizer_on_qt.dir/todowindow.cpp.o.d"
+  "CMakeFiles/organizer_on_qt.dir/userdata.cpp.o"
+  "CMakeFiles/organizer_on_qt.dir/userdata.cpp.o.d"
   "organizer_on_qt"
   "organizer_on_qt.pdb"
 )

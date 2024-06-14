@@ -299,6 +299,46 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /home/maksym/projects/help/organizer_on_qt/mainwindow.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/include/ui_graphicswindow.h \
+ /usr/include/qt6/QtCore/QVariant /usr/include/qt6/QtCore/qvariant.h \
+ /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/qapplication.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtGui/qguiapplication.h \
+ /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/qt6/QtWidgets/QHeaderView \
+ /usr/include/qt6/QtWidgets/qheaderview.h \
+ /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtWidgets/qwidget.h \
+ /usr/include/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/qt6/QtWidgets/qstyleoption.h \
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+ /usr/include/qt6/QtGui/qvalidator.h \
+ /usr/include/qt6/QtCore/qregularexpression.h \
+ /usr/include/qt6/QtWidgets/qslider.h \
+ /usr/include/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
+ /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/qrubberband.h \
+ /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/QTableWidget \
+ /usr/include/qt6/QtWidgets/qtablewidget.h \
+ /usr/include/qt6/QtWidgets/qtableview.h \
+ /usr/include/qt6/QtWidgets/QWidget \
  /home/maksym/projects/help/organizer_on_qt/QCustomPlot-library/lib/qcustomplot.h \
  /home/maksym/projects/help/organizer_on_qt/QCustomPlot-library/lib/config.h \
  /usr/include/qt6/QtCore/QObject /usr/include/qt6/QtCore/qobject.h \
@@ -310,24 +350,21 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtGui/qpen.h \
  /usr/include/qt6/QtGui/QPainterPath \
  /usr/include/qt6/QtGui/qpainterpath.h /usr/include/qt6/QtGui/QPaintEvent \
- /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qcoreevent.h \
- /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtCore/qpointer.h \
- /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtGui/qeventpoint.h \
- /usr/include/qt6/QtGui/qvector2d.h /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qpointer.h \
+ /usr/include/qt6/QtGui/qeventpoint.h /usr/include/qt6/QtGui/qvector2d.h \
+ /usr/include/qt6/QtGui/qvectornd.h \
  /usr/include/qt6/QtGui/qpointingdevice.h \
  /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
  /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
  /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/qrect.h \
  /usr/include/qt6/QtCore/QSize /usr/include/qt6/QtCore/qsize.h \
  /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qtransform.h \
- /usr/include/qt6/QtCore/qnativeinterface.h \
- /usr/include/qt6/QtGui/QMouseEvent /usr/include/qt6/QtGui/QWheelEvent \
- /usr/include/qt6/QtGui/QPixmap /usr/include/qt6/QtGui/qpixmap.h \
- /usr/include/qt6/QtCore/QVector /usr/include/qt6/QtCore/qvector.h \
- /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
- /usr/include/qt6/QtCore/QDateTime /usr/include/qt6/QtCore/qdatetime.h \
- /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/QMouseEvent \
+ /usr/include/qt6/QtGui/QWheelEvent /usr/include/qt6/QtGui/QPixmap \
+ /usr/include/qt6/QtGui/qpixmap.h /usr/include/qt6/QtCore/QVector \
+ /usr/include/qt6/QtCore/qvector.h /usr/include/qt6/QtCore/QString \
+ /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/QDateTime \
+ /usr/include/qt6/QtCore/qdatetime.h /usr/include/qt6/QtCore/qcalendar.h \
  /usr/include/qt6/QtCore/QMultiMap /usr/include/qt6/QtCore/qmap.h \
  /usr/include/qt6/QtCore/QFlags /usr/include/qt6/QtCore/qflags.h \
  /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h \
@@ -335,7 +372,7 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtCore/QCache /usr/include/qt6/QtCore/qcache.h \
  /usr/include/qt6/QtCore/QMargins /usr/include/qt6/QtCore/qmargins.h \
  /usr/include/qt6/QtCore/qmath.h /usr/include/qt6/QtCore/QtNumeric \
- /usr/include/qt6/QtCore/qnumeric.h /usr/include/qt6/QtWidgets/QWidget \
+ /usr/include/qt6/QtCore/qnumeric.h \
  /usr/include/qt6/QtPrintSupport/QtPrintSupport \
  /usr/include/qt6/QtPrintSupport/QtPrintSupportDepends \
  /usr/include/qt6/QtCore/QtCore /usr/include/qt6/QtCore/QtCoreDepends \
@@ -348,11 +385,9 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtCore/q23utility.h \
  /usr/include/qt6/QtCore/qabstractanimation.h \
  /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/qt6/QtCore/qeventloop.h \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtCore/qabstractnativeeventfilter.h \
  /usr/include/qt6/QtCore/qabstractproxymodel.h \
- /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtCore/qalgorithms.h \
  /usr/include/qt6/QtCore/qanimationgroup.h \
  /usr/include/qt6/QtCore/qabstractanimation.h \
@@ -362,8 +397,6 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtCore/qdeadlinetimer.h \
  /usr/include/qt6/QtCore/qelapsedtimer.h \
  /usr/include/qt6/QtCore/qtsan_impl.h \
- /usr/include/qt6/QtCore/qcoreapplication.h \
- /usr/include/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/qt6/QtCore/qarraydata.h \
  /usr/include/qt6/QtCore/qarraydataops.h \
  /usr/include/qt6/QtCore/qarraydatapointer.h \
@@ -380,11 +413,9 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtCore/qbytearrayview.h \
  /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qcborarray.h \
  /usr/include/qt6/QtCore/qcborvalue.h /usr/include/qt6/QtCore/qdatetime.h \
- /usr/include/qt6/QtCore/qcborcommon.h \
- /usr/include/qt6/QtCore/qregularexpression.h \
- /usr/include/qt6/QtCore/quuid.h /usr/include/qt6/QtCore/qendian.h \
- /usr/include/qt6/QtCore/qcborcommon.h /usr/include/qt6/QtCore/qcbormap.h \
- /usr/include/qt6/QtCore/qcborstream.h \
+ /usr/include/qt6/QtCore/qcborcommon.h /usr/include/qt6/QtCore/quuid.h \
+ /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtCore/qcborcommon.h \
+ /usr/include/qt6/QtCore/qcbormap.h /usr/include/qt6/QtCore/qcborstream.h \
  /usr/include/qt6/QtCore/qcborstreamreader.h \
  /usr/include/qt6/QtCore/qcborstreamwriter.h \
  /usr/include/qt6/QtCore/qcborstreamreader.h \
@@ -671,10 +702,10 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtCore/qtypeinfo.h /usr/include/qt6/QtCore/qtypes.h \
  /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtCore/qurlquery.h \
  /usr/include/qt6/QtCore/qutf8stringview.h \
- /usr/include/qt6/QtCore/quuid.h /usr/include/qt6/QtCore/qvariant.h \
+ /usr/include/qt6/QtCore/quuid.h \
  /usr/include/qt6/QtCore/qvariantanimation.h \
  /usr/include/qt6/QtCore/qvarianthash.h /usr/include/qt6/QtCore/QHash \
- /usr/include/qt6/QtCore/QVariant /usr/include/qt6/QtCore/qvariantlist.h \
+ /usr/include/qt6/QtCore/qvariantlist.h \
  /usr/include/qt6/QtCore/qvariantmap.h /usr/include/qt6/QtCore/QMap \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qversionnumber.h \
@@ -692,7 +723,6 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtGui/qglyphrun.h /usr/include/qt6/QtGui/qrawfont.h \
  /usr/include/qt6/QtGui/qfontdatabase.h \
  /usr/include/qt6/QtGui/qtextcursor.h \
- /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtGui/qtextformat.h \
  /usr/include/qt6/QtGui/qaccessible.h \
  /usr/include/qt6/QtGui/qaccessible_base.h \
@@ -720,9 +750,6 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtGui/qgenericplugin.h \
  /usr/include/qt6/QtGui/qgenericpluginfactory.h \
  /usr/include/qt6/QtGui/qglyphrun.h \
- /usr/include/qt6/QtGui/qguiapplication.h \
- /usr/include/qt6/QtGui/qinputmethod.h \
- /usr/include/qt6/QtGui/qguiapplication_platform.h \
  /usr/include/qt6/QtGui/qguiapplication.h /usr/include/qt6/QtGui/qicon.h \
  /usr/include/qt6/QtGui/qiconengine.h \
  /usr/include/qt6/QtGui/qiconengineplugin.h \
@@ -795,20 +822,8 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtWidgets/QtWidgetsDepends \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
- /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
- /usr/include/qt6/QtWidgets/qstyleoption.h \
- /usr/include/qt6/QtWidgets/qabstractspinbox.h \
- /usr/include/qt6/QtGui/qvalidator.h /usr/include/qt6/QtWidgets/qslider.h \
- /usr/include/qt6/QtWidgets/qabstractslider.h \
- /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h \
- /usr/include/qt6/QtWidgets/qrubberband.h \
- /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtCore/qitemselectionmodel.h \
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/qt6/QtWidgets/qabstractslider.h \
  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
@@ -817,7 +832,6 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qaction.h /usr/include/qt6/QtGui/QAction \
  /usr/include/qt6/QtWidgets/qactiongroup.h \
  /usr/include/qt6/QtGui/QActionGroup \
- /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
@@ -826,12 +840,10 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qbuttongroup.h \
  /usr/include/qt6/QtWidgets/qcalendarwidget.h \
  /usr/include/qt6/QtWidgets/qcheckbox.h \
- /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/qcolordialog.h \
  /usr/include/qt6/QtWidgets/qdialog.h \
  /usr/include/qt6/QtWidgets/qcolormap.h \
  /usr/include/qt6/QtWidgets/qcolumnview.h \
- /usr/include/qt6/QtWidgets/qabstractitemview.h \
  /usr/include/qt6/QtWidgets/qcombobox.h \
  /usr/include/qt6/QtWidgets/qcommandlinkbutton.h \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
@@ -882,14 +894,12 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qgraphicswidget.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
  /usr/include/qt6/QtWidgets/qgroupbox.h \
- /usr/include/qt6/QtWidgets/qheaderview.h \
  /usr/include/qt6/QtWidgets/qinputdialog.h \
  /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qitemdelegate.h \
  /usr/include/qt6/QtWidgets/qitemeditorfactory.h \
  /usr/include/qt6/QtCore/qmetaobject.h \
  /usr/include/qt6/QtWidgets/qkeysequenceedit.h \
- /usr/include/qt6/QtWidgets/qlabel.h /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qlcdnumber.h \
  /usr/include/qt6/QtWidgets/qlineedit.h \
@@ -910,7 +920,6 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qprogressdialog.h \
  /usr/include/qt6/QtWidgets/qproxystyle.h \
  /usr/include/qt6/QtWidgets/QCommonStyle \
- /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qradiobutton.h \
  /usr/include/qt6/QtWidgets/qrubberband.h \
  /usr/include/qt6/QtWidgets/qscrollarea.h \
@@ -937,8 +946,6 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qstyleplugin.h \
  /usr/include/qt6/QtWidgets/qsystemtrayicon.h \
  /usr/include/qt6/QtWidgets/qtabbar.h \
- /usr/include/qt6/QtWidgets/qtableview.h \
- /usr/include/qt6/QtWidgets/qtablewidget.h \
  /usr/include/qt6/QtWidgets/qtableview.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qtextbrowser.h \
@@ -974,9 +981,5 @@ CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o: \
  /usr/include/qt6/QtPrintSupport/qprintpreviewwidget.h \
  /usr/include/qt6/QtPrintSupport/qtprintsupportversion.h \
  /usr/include/qt6/QtCore/QElapsedTimer /usr/include/qt6/QtCore/QTimeZone \
- /home/maksym/projects/help/organizer_on_qt/mainwindow.h \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/include/ui_graphicswindow.h \
- /usr/include/qt6/QtWidgets/QApplication \
- /usr/include/qt6/QtWidgets/QHeaderView /usr/include/qt6/QtWidgets/QLabel \
- /usr/include/qt6/QtWidgets/QPushButton \
- /usr/include/qt6/QtWidgets/QTableWidget
+ /home/maksym/projects/help/organizer_on_qt/userdata.h \
+ /usr/include/qt6/QtCore/QString

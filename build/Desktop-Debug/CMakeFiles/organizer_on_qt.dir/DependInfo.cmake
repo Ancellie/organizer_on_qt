@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/mocs_compilation.cpp" "CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o.d"
   "/home/maksym/projects/help/organizer_on_qt/registerwindow.cpp" "CMakeFiles/organizer_on_qt.dir/registerwindow.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/registerwindow.cpp.o.d"
   "/home/maksym/projects/help/organizer_on_qt/todowindow.cpp" "CMakeFiles/organizer_on_qt.dir/todowindow.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/todowindow.cpp.o.d"
+  "/home/maksym/projects/help/organizer_on_qt/userdata.cpp" "CMakeFiles/organizer_on_qt.dir/userdata.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/userdata.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

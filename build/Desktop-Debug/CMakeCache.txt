@@ -400,15 +400,6 @@ XKB_INCLUDE_DIR:PATH=/usr/include
 XKB_LIBRARY:FILEPATH=/usr/lib64/libxkbcommon.so
 
 //Value Computed by CMake
-organizer_maks_BINARY_DIR:STATIC=/home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug
-
-//Value Computed by CMake
-organizer_maks_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-organizer_maks_SOURCE_DIR:STATIC=/home/maksym/projects/help/organizer_on_qt
-
-//Value Computed by CMake
 organizer_on_qt_BINARY_DIR:STATIC=/home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug
 
 //Value Computed by CMake

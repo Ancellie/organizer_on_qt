@@ -5,6 +5,7 @@
 #include "./ui_loginwindow.h"
 #include "mainwindow.h"
 #include "registerwindow.h"
+#include "userdata.h"
 
 loginWindow::loginWindow(QWidget *parent)
     : QWidget(parent)
@@ -64,6 +65,7 @@ bool loginWindow::authenticateUser(const QString &username, const QString &passw
         QString line = in.readLine();
         QStringList userData = line.split(",");
         if (userData.size() == 2 && userData[0] == username && userData[1] == password) {
+            UserData::username = userData[0];
             file.close();
             return true;
         }

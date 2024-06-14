@@ -355,4 +355,6 @@ CMakeFiles/organizer_on_qt.dir/loginwindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/QWidget \
  /home/maksym/projects/help/organizer_on_qt/mainwindow.h \
- /home/maksym/projects/help/organizer_on_qt/registerwindow.h
+ /home/maksym/projects/help/organizer_on_qt/registerwindow.h \
+ /home/maksym/projects/help/organizer_on_qt/userdata.h \
+ /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h

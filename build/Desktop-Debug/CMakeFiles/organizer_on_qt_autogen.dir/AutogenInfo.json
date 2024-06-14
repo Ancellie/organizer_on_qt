@@ -427,6 +427,12 @@
 			"MU",
 			"EWIEGA46WW/moc_todowindow.cpp",
 			null
+		],
+		[
+			"/home/maksym/projects/help/organizer_on_qt/userdata.h",
+			"MU",
+			"EWIEGA46WW/moc_userdata.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -530,7 +536,8 @@
 			"/home/maksym/projects/help/organizer_on_qt/todowindow.cpp",
 			"MU",
 			null
-		]
+		],
+		[ "/home/maksym/projects/help/organizer_on_qt/userdata.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
