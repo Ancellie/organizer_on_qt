@@ -1,9 +1,10 @@
 #include "mainwindow.h"
+#include "graphicswindow.h"
 #include "loginwindow.h"
 #include "ui_mainwindow.h"
 #include "noteswindow.h"
 #include "todowindow.h"
-#include "graphicswindow.h"
+#include "ctodolist.h"
 
 mainWindow::mainWindow(QWidget *parent)
     : QWidget(parent)
@@ -27,7 +28,6 @@ void mainWindow::on_exitButton_clicked()
     this->close();
 }
 
-
 void mainWindow::on_notesButton_clicked()
 {
     // Створюємо інстанцію registerWindow
@@ -38,17 +38,15 @@ void mainWindow::on_notesButton_clicked()
     this->close();
 }
 
-
 void mainWindow::on_todoButton_clicked()
 {
     // Створюємо інстанцію registerWindow
-    todoWindow *todowindow = new todoWindow();
+    CToDoList *todowindow = new CToDoList();
     // Показуємо вікно реєстрації
     todowindow->show();
     // Закриваємо вікно логіну (опціонально)
     this->close();
 }
-
 
 void mainWindow::on_grahicsButton_clicked()
 {
@@ -59,4 +57,3 @@ void mainWindow::on_grahicsButton_clicked()
     // Закриваємо вікно логіну (опціонально)
     this->close();
 }
-

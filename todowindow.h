@@ -18,6 +18,8 @@ public:
 private slots:
     void on_backButton_clicked();
 
+    void on_addButton_clicked();
+
 private:
     Ui::todoWindow *ui;
 };

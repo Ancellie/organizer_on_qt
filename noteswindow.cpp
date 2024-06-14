@@ -1,6 +1,6 @@
 #include "noteswindow.h"
-#include "ui_noteswindow.h"
 #include "mainwindow.h"
+#include "ui_noteswindow.h"
 
 notesWindow::notesWindow(QWidget *parent)
     : QWidget(parent)
@@ -23,4 +23,3 @@ void notesWindow::on_backButton_clicked()
     // Закриваємо вікно логіну (опціонально)
     this->close();
 }
-

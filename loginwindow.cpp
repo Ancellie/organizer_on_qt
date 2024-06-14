@@ -1,10 +1,10 @@
 #include "loginwindow.h"
-#include "./ui_loginwindow.h"
-#include "registerwindow.h"
 #include <QFile>
-#include <QTextStream>
 #include <QMessageBox>
+#include <QTextStream>
+#include "./ui_loginwindow.h"
 #include "mainwindow.h"
+#include "registerwindow.h"
 
 loginWindow::loginWindow(QWidget *parent)
     : QWidget(parent)

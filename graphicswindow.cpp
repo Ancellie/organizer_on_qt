@@ -1,6 +1,6 @@
 #include "graphicswindow.h"
-#include "ui_graphicswindow.h"
 #include "mainwindow.h"
+#include "ui_graphicswindow.h"
 
 graphicsWindow::graphicsWindow(QWidget *parent)
     : QWidget(parent)
@@ -27,7 +27,6 @@ void graphicsWindow::on_pushButton_clicked()
     this->close();
 }
 
-
 void graphicsWindow::on_tableWidget_cellChanged(int row, int column)
 {
 
@@ -37,4 +36,3 @@ void graphicsWindow::redraw() {
     ui->customPlot->rescaleAxes();
     ui->customPlot->replot();
 }
-
