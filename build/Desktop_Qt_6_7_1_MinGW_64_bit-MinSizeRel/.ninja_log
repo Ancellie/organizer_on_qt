@@ -1,0 +1,24 @@
+# ninja log v6
+78598	79457	7401517767952664	organizer_on_qt.exe	2fbb3aee8720953c
+15	3571	7401517014601676	QCustomPlot-library/lib/qcustomplot_autogen/timestamp	a9e745d51bae1513
+62637	78597	7401517608340689	CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.obj	b1c6d75451025052
+59839	62544	7401517605750268	D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/mocs_compilation.cpp	64c94a6b054d92cb
+15	3571	7401517014601676	QCustomPlot-library/lib/qcustomplot_autogen/mocs_compilation.cpp	a9e745d51bae1513
+15	3571	7401517014601676	D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/QCustomPlot-library/lib/qcustomplot_autogen/timestamp	a9e745d51bae1513
+59839	62544	7401517605750268	organizer_on_qt_autogen/timestamp	64c94a6b054d92cb
+57068	59838	7401517580149874	D:/qt/organizer_on_qt/build/output/amd64/MinSizeRel/lib/libqcustomplot.dll.a	3ecc204c27e0422
+15	3571	7401517014601676	D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/QCustomPlot-library/lib/qcustomplot_autogen/mocs_compilation.cpp	a9e745d51bae1513
+3596	29002	7401517017941669	QCustomPlot-library/lib/CMakeFiles/qcustomplot.dir/qcustomplot_autogen/mocs_compilation.cpp.obj	92f04157130d1d2d
+57068	59838	7401517580149874	D:/qt/organizer_on_qt/build/output/amd64/MinSizeRel/bin/libqcustomplot.dll	3ecc204c27e0422
+3654	57068	7401517018521627	QCustomPlot-library/lib/CMakeFiles/qcustomplot.dir/qcustomplot.cpp.obj	ea510634563af8cf
+59839	62544	7401517605750268	organizer_on_qt_autogen/mocs_compilation.cpp	64c94a6b054d92cb
+59839	62544	7401517605750268	D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/timestamp	64c94a6b054d92cb
+62663	69957	7401517608610327	CMakeFiles/organizer_on_qt.dir/userdata.cpp.obj	f74225e4f092b776
+62609	71678	7401517608060307	CMakeFiles/organizer_on_qt.dir/registerwindow.cpp.obj	33592cff770700c6
+62628	69959	7401517608250356	CMakeFiles/organizer_on_qt.dir/todowindow.cpp.obj	4e4cb4091f98d637
+62618	69961	7401517608160323	CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.obj	b198416e2ddd1ebb
+62591	70010	7401517607880636	CMakeFiles/organizer_on_qt.dir/main.cpp.obj	a3ffcf63381749ed
+62644	70104	7401517608420326	CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.obj	45e9ddab3368bae0
+62547	70664	7401517607450504	CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.obj	196bbf409176ca01
+62599	71018	7401517607970297	CMakeFiles/organizer_on_qt.dir/loginwindow.cpp.obj	d2984dc03ddd7741
+62653	71744	7401517608510327	CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.obj	cef7befaf7bfac85

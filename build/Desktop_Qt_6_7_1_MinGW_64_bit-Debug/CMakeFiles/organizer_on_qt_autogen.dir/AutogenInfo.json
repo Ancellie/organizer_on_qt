@@ -297,6 +297,12 @@
 			"MU",
 			"EWIEGA46WW/moc_todowindow.cpp",
 			null
+		],
+		[
+			"D:/qt/organizer_on_qt/userdata.h",
+			"MU",
+			"EWIEGA46WW/moc_userdata.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -305,9 +311,11 @@
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
+		"QCUSTOMPLOT_USE_LIBRARY",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NEEDS_QMAIN",
+		"QT_PRINTSUPPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
 		"WIN32",
@@ -325,11 +333,13 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"D:/qt/organizer_on_qt/QCustomPlot-library/lib",
 		"D:/qtcreator/6.7.1/mingw_64/include/QtCore",
 		"D:/qtcreator/6.7.1/mingw_64/include",
 		"D:/qtcreator/6.7.1/mingw_64/mkspecs/win32-g++",
 		"D:/qtcreator/6.7.1/mingw_64/include/QtWidgets",
 		"D:/qtcreator/6.7.1/mingw_64/include/QtGui",
+		"D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport",
 		"D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
 		"D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
 		"D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
@@ -377,7 +387,8 @@
 		[ "D:/qt/organizer_on_qt/mainwindow.cpp", "MU", null ],
 		[ "D:/qt/organizer_on_qt/noteswindow.cpp", "MU", null ],
 		[ "D:/qt/organizer_on_qt/registerwindow.cpp", "MU", null ],
-		[ "D:/qt/organizer_on_qt/todowindow.cpp", "MU", null ]
+		[ "D:/qt/organizer_on_qt/todowindow.cpp", "MU", null ],
+		[ "D:/qt/organizer_on_qt/userdata.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
