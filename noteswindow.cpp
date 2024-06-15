@@ -1,196 +1,144 @@
 #include "noteswindow.h"
+#include "mainwindow.h"
 #include "ui_noteswindow.h"
+#include "userdata.h" // Якщо у вас є цей файл для отримання UserData::username
+#include <QTextStream>
+#include <QDebug>
+#include <QCloseEvent>
 
-// The notesWindow constructor
-notesWindow::notesWindow(QWidget *parent) :
-
-    // Call the QMainWindow constructor
-    QMainWindow(parent),
-
-    // Create the UI class and assign it to the ui member
-    ui(new Ui::notesWindow)
+notesWindow::notesWindow(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::notesWindow)
+    , listWidget(new QListWidget(this))
 {
-    // Setup the UI
     ui->setupUi(this);
 
-    // Have the textedit widget take up the whole window
-    //this->setCentralWidget(ui->textEdit);
+    // Додаємо listWidget до головного макета
+    ui->verticalLayout->addWidget(listWidget);
+
+    // Завантажуємо нотатки
+    loadNotes();
 }
 
-// Destructor that deletes the UI
 notesWindow::~notesWindow()
 {
     delete ui;
 }
 
-// We can type in commands on our menubar which will then appear in
-// the Action Editor.
-// Right click the Action -> Go to slot -> Triggered -> Add code for the event
-
-// With Qt objects communicate in a different way from other frameworks
-
-// Most frameworks handle an event by creating a function that processes
-// events by calling other functions when an event occurs
-
-// With Qt widgets issue a Signal when an event occurs and specific
-// Slots (functions) are called in response to the signal
-
-// ----- ADDING ICONS TO TOOLBAR & MENU -----
-
-// 1. Add Resource Folder : Right Click Project -> Add New ->
-// Qt -> Qt Resource File -> Name : Resources Path: Folder
-
-// 2. Add Icons to Resource Folder : Select resource file ->
-// Add Prefix -> /imgs -> Add Files -> Select icons
-
-// 3. Add Icons to File Menu : Right click item in Action Editor ->
-// Choose Resource -> Select Icon -> Click to show image
-
-// 4. Add items to the toolbar by dragging from the Action
-// Editor to the toolbar
-
-// ----- END ADDING ICONS TO TOOLBAR & MENU -----
-
-void notesWindow::on_actionNew_triggered()
+void notesWindow::closeEvent(QCloseEvent *event)
 {
-    // Global referencing the current file that we are clearing
-    currentFile.clear();
-
-    // Clear the textEdit widget buffer
-    ui->textEdit->setText(QString());
+    saveNotes();
+    event->accept();
 }
 
-void notesWindow::on_actionOpen_triggered()
+void notesWindow::on_backButton_clicked()
 {
-    // Opens a dialog that allows you to select a file to open
-    QString fileName = QFileDialog::getOpenFileName(this, "Open the file");
+    mainWindow *mainwindow = new mainWindow();
+    mainwindow->show();
+    this->close();
+}
 
-    // An object for reading and writing files
-    QFile file(fileName);
+void notesWindow::on_lineEdit_textChanged(const QString &text)
+{
+    QLineEdit *lineEdit = qobject_cast<QLineEdit*>(sender());
+    if (!lineEdit) return;
 
-    // Store the currentFile name
-    currentFile = fileName;
+    // Знайти рядок, який містить цей lineEdit
+    int row = -1;
+    for (int i = 0; i < listWidget->count(); ++i) {
+        if (listWidget->itemWidget(listWidget->item(i)) == lineEdit) {
+            row = i;
+            break;
+        }
+    }
 
-    // Try to open the file as a read only file if possible or display a
-    // warning dialog box
-    if (!file.open(QIODevice::ReadOnly | QFile::Text)) {
-        QMessageBox::warning(this, "Warning", "Cannot open file: " + file.errorString());
+    if (row == -1) return;
+
+    if (!text.isEmpty() && row == listWidget->count() - 1) {
+        addLineEdit();
+    } else if (text.isEmpty() && row < listWidget->count() - 1) {
+        removeLineEdit(row);
+    }
+}
+
+void notesWindow::addLineEdit(const QString &text)
+{
+    QLineEdit *lineEdit = new QLineEdit(this);
+    QListWidgetItem *item = new QListWidgetItem(listWidget);
+    listWidget->addItem(item);
+    listWidget->setItemWidget(item, lineEdit);
+    lineEdit->setText(text);
+
+    connect(lineEdit, &QLineEdit::textChanged, this, &notesWindow::on_lineEdit_textChanged);
+}
+
+void notesWindow::removeLineEdit(int row)
+{
+    QListWidgetItem *item = listWidget->takeItem(row);
+    QWidget *widget = listWidget->itemWidget(item);
+    delete widget;
+    delete item;
+}
+
+void notesWindow::loadNotes()
+{
+    QString filePath = "notes/" + UserData::username + ".txt";
+    QFile file(filePath);
+
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        qDebug() << "Failed to open file for reading: " << filePath;
         return;
     }
 
-    // Set the title for the window to the file name
-    setWindowTitle(fileName);
-
-    // Interface for reading text
     QTextStream in(&file);
+    while (!in.atEnd())
+    {
+        QString line = in.readLine();
+        addLineEdit(line);
+    }
 
-    // Copy text in the string
-    QString text = in.readAll();
-
-    // Put the text in the textEdit widget
-    ui->textEdit->setText(text);
-
-    // Close the file
     file.close();
+
+    // Додаємо пустий lineEdit якщо список не порожній
+    if (listWidget->count() == 0 || !static_cast<QLineEdit*>(listWidget->itemWidget(listWidget->item(listWidget->count() - 1)))->text().isEmpty())
+    {
+        addLineEdit();
+    }
 }
 
-void notesWindow::on_actionSave_as_triggered()
+void notesWindow::saveNotes()
 {
-    // Opens a dialog for saving a file
-    QString fileName = QFileDialog::getSaveFileName(this, "Save as");
+    QString dirPath = "notes";
+    QDir dir;
 
-    // An object for reading and writing files
-    QFile file(fileName);
+    if (!dir.exists(dirPath))
+    {
+        if (!dir.mkpath(dirPath))
+        {
+            qDebug() << "Failed to create directory: " << dirPath;
+            return;
+        }
+    }
 
-    // Try to open a file with write only options
-    if (!file.open(QFile::WriteOnly | QFile::Text)) {
-        QMessageBox::warning(this, "Warning", "Cannot save file: " + file.errorString());
+    QString filePath = dirPath + "/" + UserData::username + ".txt";
+    QFile file(filePath);
+
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        qDebug() << "Failed to open file for writing: " << filePath;
         return;
     }
 
-    // Store the currentFile name
-    currentFile = fileName;
-
-    // Set the title for the window to the file name
-    setWindowTitle(fileName);
-
-    // Interface for writing text
     QTextStream out(&file);
-
-    // Copy text in the textEdit widget and convert to plain text
-    QString text = ui->textEdit->toPlainText();
-
-    // Output to file
-    out << text;
-
-    // Close the file
-    file.close();
-}
-
-void notesWindow::on_actionSave_triggered()
-{
-    QString fileName = QFileDialog::getSaveFileName(this, "Save");
-    QFile file(fileName);
-    if (!file.open(QFile::WriteOnly | QFile::Text)) {
-        QMessageBox::warning(this, "Warning", "Cannot save file: " + file.errorString());
-        return;
-    }
-    currentFile = fileName;
-    setWindowTitle(fileName);
-    QTextStream out(&file);
-    QString text = ui->textEdit->toPlainText();
-    out << text;
-    file.close();
-}
-
-void notesWindow::on_actionPrint_triggered()
-{
-    // Allows for interacting with printer
-    QPrinter printer;
-
-    // You'll put your printer name here
-    printer.setPrinterName("Printer Name");
-
-    // Create the print dialog and pass the name and parent
-    QPrintDialog pDialog(&printer, this);
-
-    if(pDialog.exec() == QDialog::Rejected){
-        QMessageBox::warning(this, "Warning", "Cannot Access Printer");
-        return;
+    for (int i = 0; i < listWidget->count(); ++i)
+    {
+        QLineEdit *lineEdit = static_cast<QLineEdit*>(listWidget->itemWidget(listWidget->item(i)));
+        if (lineEdit && !lineEdit->text().isEmpty())
+        {
+            out << lineEdit->text() << "\n";
+        }
     }
 
-    // Send the text to the printer
-    ui->textEdit->print(&printer);
-
-}
-
-void notesWindow::on_actionExit_triggered()
-{
-    QApplication::quit();
-}
-
-
-void notesWindow::on_actionCopy_triggered()
-{
-    ui->textEdit->copy();
-}
-
-void notesWindow::on_actionCut_triggered()
-{
-    ui->textEdit->cut();
-}
-
-void notesWindow::on_actionPaste_triggered()
-{
-    ui->textEdit->paste();
-}
-
-void notesWindow::on_actionUndo_triggered()
-{
-    ui->textEdit->undo();
-}
-
-void notesWindow::on_actionRedo_triggered()
-{
-    ui->textEdit->redo();
+    file.close();
 }
