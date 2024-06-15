@@ -42,20 +42,13 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>170</y>
-     <width>391</width>
-     <height>211</height>
+     <x>9</x>
+     <y>59</y>
+     <width>781</width>
+     <height>451</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="sizeConstraint">
-     <enum>QLayout::SetFixedSize</enum>
-    </property>
-    <item>
-     <widget class="QTextEdit" name="textEdit"/>
-    </item>
-   </layout>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
   </widget>
  </widget>
  <resources/>
