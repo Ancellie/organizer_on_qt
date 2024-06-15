@@ -1,5 +1,5 @@
-#include "notesWindow.h"
-#include "ui_notesWindow.h"
+#include "noteswindow.h"
+#include "ui_noteswindow.h"
 
 // The notesWindow constructor
 notesWindow::notesWindow(QWidget *parent) :

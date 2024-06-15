@@ -2503,6 +2503,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/13/algorithm \
@@ -2518,11 +2519,14 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -2532,6 +2536,10 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fs_dir.h \
+  /usr/include/c++/13/bits/fs_fwd.h \
+  /usr/include/c++/13/bits/fs_ops.h \
+  /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -2539,9 +2547,15 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/list.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -2549,11 +2563,13 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -2561,6 +2577,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/stl_algo.h \
@@ -2601,6 +2618,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
+  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
@@ -2609,6 +2627,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
@@ -2619,23 +2638,30 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/filesystem \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
+  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
+  /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/optional \
+  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
@@ -2667,10 +2693,14 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_inline.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/error_constants.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/gthr.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/messages_members.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2678,13 +2708,16 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QFile \
   /usr/include/qt6/QtCore/QStringListModel \
+  /usr/include/qt6/QtCore/QTextStream \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20memory.h \
@@ -2705,6 +2738,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
   /usr/include/qt6/QtCore/qbytearrayview.h \
+  /usr/include/qt6/QtCore/qcalendar.h \
   /usr/include/qt6/QtCore/qchar.h \
   /usr/include/qt6/QtCore/qcompare.h \
   /usr/include/qt6/QtCore/qcompare_impl.h \
@@ -2721,9 +2755,14 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/qt6/QtCore/qcoreevent.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qdir.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
   /usr/include/qt6/QtCore/qforeach.h \
@@ -2796,6 +2835,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
+  /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -2826,6 +2866,10 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/qt6/QtGui/qimage.h \
   /usr/include/qt6/QtGui/qinputmethod.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
+  /usr/include/qt6/QtGui/qpagedpaintdevice.h \
+  /usr/include/qt6/QtGui/qpagelayout.h \
+  /usr/include/qt6/QtGui/qpageranges.h \
+  /usr/include/qt6/QtGui/qpagesize.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
   /usr/include/qt6/QtGui/qpicture.h \
@@ -2842,10 +2886,20 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/qt6/QtGui/qtransform.h \
   /usr/include/qt6/QtGui/qvalidator.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
+  /usr/include/qt6/QtPrintSupport/QPrintDialog \
+  /usr/include/qt6/QtPrintSupport/QPrinter \
+  /usr/include/qt6/QtPrintSupport/qabstractprintdialog.h \
+  /usr/include/qt6/QtPrintSupport/qprintdialog.h \
+  /usr/include/qt6/QtPrintSupport/qprinter.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupport-config.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupportexports.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupportglobal.h \
   /usr/include/qt6/QtWidgets/QApplication \
+  /usr/include/qt6/QtWidgets/QFileDialog \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QListView \
   /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/QMessageBox \
   /usr/include/qt6/QtWidgets/QPushButton \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qabstractbutton.h \
@@ -2855,10 +2909,14 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/qt6/QtWidgets/qabstractslider.h \
   /usr/include/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/qt6/QtWidgets/qapplication.h \
+  /usr/include/qt6/QtWidgets/qdialog.h \
+  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/qt6/QtWidgets/qfiledialog.h \
   /usr/include/qt6/QtWidgets/qframe.h \
   /usr/include/qt6/QtWidgets/qlabel.h \
   /usr/include/qt6/QtWidgets/qlistview.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/qt6/QtWidgets/qmessagebox.h \
   /usr/include/qt6/QtWidgets/qpushbutton.h \
   /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
@@ -2884,6 +2942,7 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdbool.h \
@@ -2893,7 +2952,6 @@ CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.o: /home/maksym/projects/help/orga
 
 CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/organizer_on_qt/noteswindow.cpp \
   organizer_on_qt_autogen/include/ui_noteswindow.h \
-  /home/maksym/projects/help/organizer_on_qt/mainwindow.h \
   /home/maksym/projects/help/organizer_on_qt/noteswindow.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -2971,6 +3029,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/13/algorithm \
@@ -2986,11 +3045,14 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -3000,6 +3062,10 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fs_dir.h \
+  /usr/include/c++/13/bits/fs_fwd.h \
+  /usr/include/c++/13/bits/fs_ops.h \
+  /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -3007,9 +3073,15 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/list.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -3017,11 +3089,13 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -3029,6 +3103,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/stl_algo.h \
@@ -3069,6 +3144,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
+  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
@@ -3077,6 +3153,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
@@ -3087,23 +3164,30 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/filesystem \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
+  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
+  /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/optional \
+  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
@@ -3135,10 +3219,14 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_inline.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/error_constants.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/gthr.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/messages_members.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3146,12 +3234,15 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QFile \
+  /usr/include/qt6/QtCore/QTextStream \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20memory.h \
@@ -3171,6 +3262,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
   /usr/include/qt6/QtCore/qbytearrayview.h \
+  /usr/include/qt6/QtCore/qcalendar.h \
   /usr/include/qt6/QtCore/qchar.h \
   /usr/include/qt6/QtCore/qcompare.h \
   /usr/include/qt6/QtCore/qcompare_impl.h \
@@ -3187,9 +3279,14 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/qt6/QtCore/qcoreevent.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qdir.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
   /usr/include/qt6/QtCore/qforeach.h \
@@ -3259,6 +3356,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
+  /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -3289,8 +3387,13 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/qt6/QtGui/qimage.h \
   /usr/include/qt6/QtGui/qinputmethod.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
+  /usr/include/qt6/QtGui/qpagedpaintdevice.h \
+  /usr/include/qt6/QtGui/qpagelayout.h \
+  /usr/include/qt6/QtGui/qpageranges.h \
+  /usr/include/qt6/QtGui/qpagesize.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
+  /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qpicture.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
@@ -3298,22 +3401,50 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/qt6/QtGui/qregion.h \
   /usr/include/qt6/QtGui/qrgb.h \
   /usr/include/qt6/QtGui/qrgba64.h \
+  /usr/include/qt6/QtGui/qtextcursor.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
+  /usr/include/qt6/QtGui/qtextformat.h \
+  /usr/include/qt6/QtGui/qtextoption.h \
   /usr/include/qt6/QtGui/qtgui-config.h \
   /usr/include/qt6/QtGui/qtguiexports.h \
   /usr/include/qt6/QtGui/qtguiglobal.h \
   /usr/include/qt6/QtGui/qtransform.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
+  /usr/include/qt6/QtPrintSupport/QPrintDialog \
+  /usr/include/qt6/QtPrintSupport/QPrinter \
+  /usr/include/qt6/QtPrintSupport/qabstractprintdialog.h \
+  /usr/include/qt6/QtPrintSupport/qprintdialog.h \
+  /usr/include/qt6/QtPrintSupport/qprinter.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupport-config.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupportexports.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupportglobal.h \
   /usr/include/qt6/QtWidgets/QApplication \
+  /usr/include/qt6/QtWidgets/QFileDialog \
   /usr/include/qt6/QtWidgets/QLabel \
+  /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/QMessageBox \
   /usr/include/qt6/QtWidgets/QPushButton \
+  /usr/include/qt6/QtWidgets/QTextEdit \
+  /usr/include/qt6/QtWidgets/QVBoxLayout \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qapplication.h \
+  /usr/include/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/qt6/QtWidgets/qdialog.h \
+  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/qt6/QtWidgets/qfiledialog.h \
   /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qgridlayout.h \
   /usr/include/qt6/QtWidgets/qlabel.h \
+  /usr/include/qt6/QtWidgets/qlayout.h \
+  /usr/include/qt6/QtWidgets/qlayoutitem.h \
+  /usr/include/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/qt6/QtWidgets/qmessagebox.h \
   /usr/include/qt6/QtWidgets/qpushbutton.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/qt6/QtWidgets/qtextedit.h \
   /usr/include/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
   /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -3331,6 +3462,7 @@ CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.o: /home/maksym/projects/help/org
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdbool.h \
@@ -3429,6 +3561,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/13/algorithm \
@@ -3444,11 +3577,14 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -3458,6 +3594,10 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fs_dir.h \
+  /usr/include/c++/13/bits/fs_fwd.h \
+  /usr/include/c++/13/bits/fs_ops.h \
+  /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -3465,9 +3605,15 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/list.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -3475,11 +3621,13 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -3487,6 +3635,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/stl_algo.h \
@@ -3527,6 +3676,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
+  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
@@ -3535,6 +3685,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
@@ -3545,23 +3696,30 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/filesystem \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
+  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
+  /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/optional \
+  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
@@ -3593,10 +3751,14 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_inline.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/error_constants.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/gthr.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/messages_members.h \
   /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/c++/13/x86_64-redhat-linux/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3604,13 +3766,16 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QFile \
   /usr/include/qt6/QtCore/QStringListModel \
+  /usr/include/qt6/QtCore/QTextStream \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20memory.h \
   /usr/include/qt6/QtCore/q20type_traits.h \
@@ -3630,6 +3795,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
   /usr/include/qt6/QtCore/qbytearrayview.h \
+  /usr/include/qt6/QtCore/qcalendar.h \
   /usr/include/qt6/QtCore/qchar.h \
   /usr/include/qt6/QtCore/qcompare.h \
   /usr/include/qt6/QtCore/qcompare_impl.h \
@@ -3643,8 +3809,13 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtCore/qcontiguouscache.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qdir.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
   /usr/include/qt6/QtCore/qforeach.h \
@@ -3655,6 +3826,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtCore/qglobalstatic.h \
   /usr/include/qt6/QtCore/qhash.h \
   /usr/include/qt6/QtCore/qhashfunctions.h \
+  /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtCore/qiodevicebase.h \
   /usr/include/qt6/QtCore/qitemselectionmodel.h \
   /usr/include/qt6/QtCore/qiterable.h \
@@ -3715,6 +3887,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
+  /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtmochelpers.h \
   /usr/include/qt6/QtCore/qtnoop.h \
@@ -3726,6 +3899,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtCore/qtversionchecks.h \
   /usr/include/qt6/QtCore/qtypeinfo.h \
   /usr/include/qt6/QtCore/qtypes.h \
+  /usr/include/qt6/QtCore/qurl.h \
   /usr/include/qt6/QtCore/qutf8stringview.h \
   /usr/include/qt6/QtCore/qvariant.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
@@ -3742,6 +3916,10 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtGui/qicon.h \
   /usr/include/qt6/QtGui/qimage.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
+  /usr/include/qt6/QtGui/qpagedpaintdevice.h \
+  /usr/include/qt6/QtGui/qpagelayout.h \
+  /usr/include/qt6/QtGui/qpageranges.h \
+  /usr/include/qt6/QtGui/qpagesize.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
@@ -3756,17 +3934,31 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/qt6/QtGui/qtransform.h \
   /usr/include/qt6/QtGui/qvalidator.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
+  /usr/include/qt6/QtPrintSupport/QPrintDialog \
+  /usr/include/qt6/QtPrintSupport/QPrinter \
+  /usr/include/qt6/QtPrintSupport/qabstractprintdialog.h \
+  /usr/include/qt6/QtPrintSupport/qprintdialog.h \
+  /usr/include/qt6/QtPrintSupport/qprinter.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupport-config.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupportexports.h \
+  /usr/include/qt6/QtPrintSupport/qtprintsupportglobal.h \
+  /usr/include/qt6/QtWidgets/QFileDialog \
   /usr/include/qt6/QtWidgets/QListView \
   /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/QMessageBox \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/qt6/QtWidgets/qabstractitemview.h \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qabstractslider.h \
   /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt6/QtWidgets/qdialog.h \
+  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/qt6/QtWidgets/qfiledialog.h \
   /usr/include/qt6/QtWidgets/qframe.h \
   /usr/include/qt6/QtWidgets/qlistview.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/qt6/QtWidgets/qmessagebox.h \
   /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtWidgets/qslider.h \
@@ -3791,6 +3983,7 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: o
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdbool.h \
@@ -5311,6 +5504,8 @@ organizer_on_qt_autogen/include/ui_noteswindow.h:
 
 /usr/include/qt6/QtGui/qpaintengine.h:
 
+/usr/include/qt6/QtWidgets/QTextEdit:
+
 /usr/include/qt6/QtGui/qpagesize.h:
 
 /usr/include/qt6/QtWidgets/qstyleplugin.h:
@@ -5328,6 +5523,8 @@ organizer_on_qt_autogen/include/ui_noteswindow.h:
 /usr/include/qt6/QtGui/qoffscreensurface_platform.h:
 
 /usr/include/qt6/QtGui/qoffscreensurface.h:
+
+/usr/include/qt6/QtWidgets/QFileDialog:
 
 /usr/include/qt6/QtGui/qmatrix4x4.h:
 
@@ -5503,6 +5700,8 @@ organizer_on_qt_autogen/include/ui_noteswindow.h:
 
 /usr/include/qt6/QtCore/qeasingcurve.h:
 
+/usr/include/qt6/QtWidgets/QVBoxLayout:
+
 /usr/include/qt6/QtWidgets/qgesturerecognizer.h:
 
 /usr/include/qt6/QtCore/qdeadlinetimer.h:
@@ -5611,6 +5810,8 @@ organizer_on_qt_autogen/include/ui_noteswindow.h:
 
 /usr/include/qt6/QtCore/qfunctionpointer.h:
 
+/usr/include/qt6/QtPrintSupport/QPrinter:
+
 /usr/include/qt6/QtCore/QEvent:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
@@ -5632,6 +5833,8 @@ organizer_on_qt_autogen/EWIEGA46WW/moc_noteswindow.cpp:
 /usr/include/c++/13/map:
 
 /usr/include/c++/13/stdlib.h:
+
+/usr/include/qt6/QtPrintSupport/QPrintDialog:
 
 /usr/include/bits/mathcalls-narrow.h:
 

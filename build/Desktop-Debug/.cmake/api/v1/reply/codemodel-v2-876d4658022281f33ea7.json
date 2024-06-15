@@ -11,7 +11,7 @@
 						1
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-39fa37f7236035616f9e.json",
+					"jsonFile" : "directory-.-Debug-914f97a832bc0887d140.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -106,7 +106,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "organizer_on_qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-organizer_on_qt-Debug-3cbd5e5e5b1dc0efecb5.json",
+					"jsonFile" : "target-organizer_on_qt-Debug-4b7a32922873a35994aa.json",
 					"name" : "organizer_on_qt",
 					"projectIndex" : 0
 				},
