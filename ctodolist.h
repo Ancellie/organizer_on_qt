@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QListView>
 #include <QStringListModel>
+#include <QStyledItemDelegate>
+#include <QPainter>
 
 class CToDoList : public QMainWindow
 {
@@ -17,6 +19,9 @@ protected slots:
     void onChangeWidgetClicked();
     void loadTasksFromFile(const QString &fileName);
     void saveTasksToFile(const QString &fileName);
+    QString getUserTasksFilePath() const;
+
+
 
 private:
     QListView* m_pwPending = nullptr;
@@ -25,6 +30,5 @@ private:
     QAction* m_pActAdd = nullptr;
     QAction* m_pActRemove = nullptr;
 };
-
 
 #endif // TODOLIST_H

@@ -123,6 +123,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qversiontagging.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qxptype_traits.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/QPainter \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qaction.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qbitmap.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qbrush.h \
@@ -135,13 +136,16 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qimage.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qkeysequence.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpainter.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpalette.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpen.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixmap.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpolygon.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qregion.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgb.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgba64.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextoption.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtgui-config.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiexports.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -151,6 +155,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QListView \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QStyledItemDelegate \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -163,6 +168,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qslider.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyleditemdelegate.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
