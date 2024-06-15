@@ -1,5 +1,7 @@
 D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/EWIEGA46WW/moc_noteswindow.cpp: D:/qt/organizer_on_qt/noteswindow.h \
   D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/moc_predefs.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/QFile \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/QTextStream \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20functional.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20memory.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
@@ -18,6 +20,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qbytearraylist.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qcalendar.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qchar.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qcompare.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qcompare_impl.h \
@@ -31,9 +34,14 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qcontiguouscache.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qdatastream.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qdatetime.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qdebug.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qdir.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qendian.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qexceptionhandling.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qfile.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qfiledevice.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qfileinfo.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qflags.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qfloat16.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qforeach.h \
@@ -44,12 +52,14 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qglobalstatic.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qhash.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevice.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevicebase.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterable.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterator.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qline.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qlist.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qlocale.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qlogging.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qmalloc.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qmap.h \
@@ -101,6 +111,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtextstream.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtimezone.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtmetamacros.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtnoop.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -111,6 +122,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtversionchecks.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtypeinfo.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtypes.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qurl.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qutf8stringview.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qvariant.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -128,6 +140,10 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qicon.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qimage.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qkeysequence.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagedpaintdevice.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagelayout.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpageranges.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagesize.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpalette.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
@@ -142,8 +158,24 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtransform.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QWidget \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/QPrintDialog \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/QPrinter \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qabstractprintdialog.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qprintdialog.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qprinter.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupport-config.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupportexports.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupportglobal.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QFileDialog \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialog.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qfiledialog.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -163,10 +195,13 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
@@ -176,6 +211,10 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_path.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
@@ -183,25 +222,34 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h \
@@ -240,6 +288,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/climits \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/codecvt \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstddef \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
@@ -247,6 +296,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
@@ -258,22 +308,29 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/filesystem \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/optional \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_numeric_defs.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
@@ -304,10 +361,14 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h \
   D:/qtcreator/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
@@ -346,4 +407,5 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/qtcreator/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   D:/qtcreator/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/qtcreator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  D:/qtcreator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/qtcreator/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h

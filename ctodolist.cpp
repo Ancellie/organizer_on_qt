@@ -1,5 +1,4 @@
 #include "ctodolist.h"
-
 #include <QLabel>
 #include <QToolBar>
 #include <QBoxLayout>
@@ -8,6 +7,8 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QDir>
+#include <QDebug>
 
 CToDoList::CToDoList()
 {
@@ -66,7 +67,6 @@ CToDoList::CToDoList()
          "border: 1px solid #27AE60; }"
          "QListView::item::hover { background-color: #27AE60 }");
 
-
     QToolBar* pToolBar = new QToolBar(this);
     addToolBar(pToolBar);
 
@@ -81,13 +81,11 @@ CToDoList::CToDoList()
     pToolBar->addAction(m_pActAdd);
     pToolBar->addAction(m_pActRemove);
 
-    // Створення кнопки для зміни віджета
     QPushButton* changeWidgetButton = new QPushButton("Back to manu", this);
     connect(changeWidgetButton, &QPushButton::clicked, this, &CToDoList::onChangeWidgetClicked);
     pMainLayout->addWidget(changeWidgetButton);
 
-    // Завантаження задач з файлу під час створення вікна
-    loadTasksFromFile("tasks.txt");
+    loadTasksFromFile("tasks/tasks.txt");
 }
 
 void CToDoList::onAdd()
@@ -95,56 +93,96 @@ void CToDoList::onAdd()
     m_pwPending->model()->insertRow(m_pwPending->model()->rowCount());
     QModelIndex oIndex = m_pwPending->model()->index(
         m_pwPending->model()->rowCount() - 1, 0);
-
     m_pwPending->edit(oIndex);
-    // Зберігання оновленого списку задач у файл
-    saveTasksToFile("tasks.txt");
 }
 
 void CToDoList::onRemove()
 {
     QModelIndex oIndex = m_pwPending->currentIndex();
-    m_pwPending->model()->removeRow(oIndex.row());
-    // Зберігання оновленого списку задач у файл
-    saveTasksToFile("tasks.txt");
+    if (oIndex.isValid()) {
+        m_pwPending->model()->removeRow(oIndex.row());
+    } else {
+        oIndex = m_pwCompleted->currentIndex();
+        if (oIndex.isValid()) {
+            m_pwCompleted->model()->removeRow(oIndex.row());
+        }
+    }
 }
 
 void CToDoList::onChangeWidgetClicked()
 {
-    // Створюємо інстанцію registerWindow
+    saveTasksToFile("tasks/tasks.txt");
     mainWindow *mainwindow = new mainWindow();
-    // Показуємо вікно реєстрації
     mainwindow->show();
-    // Закриваємо вікно логіну (опціонально)
     this->close();
 }
 
 void CToDoList::loadTasksFromFile(const QString &fileName)
 {
     QFile file(fileName);
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Failed to open file for reading:" << fileName;
         return;
+    }
 
     QTextStream in(&file);
+
+    QStringList pendingTasks;
+    QStringList completedTasks;
+
     while (!in.atEnd()) {
         QString line = in.readLine();
-        // Додавання задачі до списку
-        static_cast<QStringListModel*>(m_pwPending->model())->insertRow(m_pwPending->model()->rowCount());
-        static_cast<QStringListModel*>(m_pwPending->model())->setData(m_pwPending->model()->index(m_pwPending->model()->rowCount() - 1, 0), line);
+        QStringList parts = line.split(",");
+        if (parts.size() == 2) {
+            QString task = parts[0];
+            QString status = parts[1].trimmed();
+
+            if (status == "pending") {
+                pendingTasks << task;
+            } else if (status == "completed") {
+                completedTasks << task;
+            }
+        }
     }
     file.close();
+
+    static_cast<QStringListModel*>(m_pwPending->model())->setStringList(pendingTasks);
+    static_cast<QStringListModel*>(m_pwCompleted->model())->setStringList(completedTasks);
+
+    qDebug() << "Loaded tasks from file:" << fileName;
+    qDebug() << "Pending tasks:" << pendingTasks;
+    qDebug() << "Completed tasks:" << completedTasks;
 }
 
 void CToDoList::saveTasksToFile(const QString &fileName)
 {
+    QDir dir;
+    if (!dir.exists("tasks")) {
+        dir.mkpath("tasks");
+    }
+
     QFile file(fileName);
-    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Failed to open file for writing:" << fileName;
         return;
+    }
 
     QTextStream out(&file);
-    for (int row = 0; row < m_pwPending->model()->rowCount(); ++row) {
-        QString task = static_cast<QStringListModel*>(m_pwPending->model())->data(m_pwPending->model()->index(row, 0)).toString();
-        out << task << "\n";
+
+    QStringList pendingTasks = static_cast<QStringListModel*>(m_pwPending->model())->stringList();
+    QStringList completedTasks = static_cast<QStringListModel*>(m_pwCompleted->model())->stringList();
+
+    for (const QString &task : pendingTasks) {
+        out << task << ", pending\n";
     }
+
+    for (const QString &task : completedTasks) {
+        out << task << ", completed\n";
+    }
+
     file.close();
+
+    qDebug() << "Saved tasks to file:" << fileName;
+    qDebug() << "Pending tasks:" << pendingTasks;
+    qDebug() << "Completed tasks:" << completedTasks;
 }

@@ -14,7 +14,7 @@ notesWindow::notesWindow(QWidget *parent) :
     ui->setupUi(this);
 
     // Have the textedit widget take up the whole window
-    this->setCentralWidget(ui->textEdit);
+    //this->setCentralWidget(ui->textEdit);
 }
 
 // Destructor that deletes the UI
