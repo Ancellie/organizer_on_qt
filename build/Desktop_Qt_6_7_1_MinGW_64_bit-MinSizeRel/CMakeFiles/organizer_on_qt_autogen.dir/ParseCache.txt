@@ -3,12 +3,13 @@ D:/qt/organizer_on_qt/noteswindow.h
  mmc:Q_OBJECT
  mdp:D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/moc_predefs.h
  mdp:D:/qt/organizer_on_qt/noteswindow.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/QDir
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/QFile
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/QTextStream
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20functional.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20memory.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/q23utility.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qarraydata.h
@@ -57,6 +58,7 @@ D:/qt/organizer_on_qt/noteswindow.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qhashfunctions.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevice.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevicebase.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterable.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterator.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qlatin1stringview.h
@@ -83,6 +85,7 @@ D:/qt/organizer_on_qt/noteswindow.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qprocessordetection.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qrect.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qrefcount.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qregularexpression.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qscopedpointer.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qscopeguard.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtCore/qset.h
@@ -143,41 +146,44 @@ D:/qt/organizer_on_qt/noteswindow.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qicon.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qimage.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qkeysequence.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagedpaintdevice.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagelayout.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpageranges.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagesize.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpalette.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpen.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixelformat.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixmap.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpolygon.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qregion.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgb.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextcursor.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextdocument.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextformat.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextoption.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiglobal.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtransform.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qvalidator.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/QPrintDialog
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/QPrinter
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qabstractprintdialog.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qprintdialog.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qprinter.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupport-config.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupportexports.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupportglobal.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QFileDialog
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMainWindow
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMessageBox
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialog.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qfiledialog.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h
- mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QLineEdit
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QListWidget
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QWidget
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlineedit.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistview.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistwidget.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qrubberband.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qslider.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyle.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h
+ mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabbar.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h

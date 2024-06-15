@@ -88,6 +88,7 @@ void notesWindow::loadNotes()
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file for reading: " << filePath;
+        addLineEdit();
         return;
     }
 

@@ -1,11 +1,12 @@
 D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/EWIEGA46WW/moc_noteswindow.cpp: D:/qt/organizer_on_qt/noteswindow.h \
   D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/moc_predefs.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/QDir \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/QFile \
-  D:/qtcreator/6.7.1/mingw_64/include/QtCore/QTextStream \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20functional.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20memory.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/q23utility.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qalgorithms.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qanystringview.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qarraydata.h \
@@ -54,6 +55,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qhashfunctions.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevice.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevicebase.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterable.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterator.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qlatin1stringview.h \
@@ -80,6 +82,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qprocessordetection.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qrect.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qrefcount.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qscopedpointer.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qscopeguard.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qset.h \
@@ -140,41 +143,44 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qicon.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qimage.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qkeysequence.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagedpaintdevice.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagelayout.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpageranges.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpagesize.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpalette.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpen.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixmap.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpolygon.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qregion.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgb.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgba64.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextoption.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtgui-config.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiexports.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiglobal.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtransform.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qvalidator.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/QPrintDialog \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/QPrinter \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qabstractprintdialog.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qprintdialog.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qprinter.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupport-config.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupportexports.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtPrintSupport/qtprintsupportglobal.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QFileDialog \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialog.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qfiledialog.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
-  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QListWidget \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QWidget \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistview.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistwidget.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
