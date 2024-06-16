@@ -1,7 +1,7 @@
 #include "noteswindow.h"
 #include "mainwindow.h"
 #include "ui_noteswindow.h"
-#include "userdata.h" // Якщо у вас є цей файл для отримання UserData::username
+#include "userdata.h"
 #include <QTextStream>
 #include <QDebug>
 #include <QCloseEvent>

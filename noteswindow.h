@@ -1,5 +1,5 @@
-#ifndef NOTESWINDOW_H
-#define NOTESWINDOW_H
+#ifndef notesWindow_H
+#define notesWindow_H
 
 #include <QWidget>
 #include <QListWidget>
@@ -36,4 +36,4 @@ private:
     void saveNotes();
 };
 
-#endif // NOTESWINDOW_H
+#endif // notesWindow_H

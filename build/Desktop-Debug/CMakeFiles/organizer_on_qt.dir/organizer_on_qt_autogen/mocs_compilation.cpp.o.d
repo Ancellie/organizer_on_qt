@@ -1,10 +1,9 @@
 CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: \
  /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_ctodolist.cpp \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../ctodolist.h \
- /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_calendarwindow.cpp \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../calendarwindow.h \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/13/type_traits \
@@ -132,7 +131,6 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtGui/qtguiexports.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtGui/qwindowdefs.h \
  /usr/include/qt6/QtCore/qobjectdefs.h \
  /usr/include/qt6/QtCore/qnamespace.h \
@@ -302,46 +300,25 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h \
- /usr/include/qt6/QtWidgets/QListView \
- /usr/include/qt6/QtWidgets/qlistview.h \
- /usr/include/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtWidgets/qframe.h \
- /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtCore/qitemselectionmodel.h \
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
- /usr/include/qt6/QtWidgets/qstyleoption.h \
- /usr/include/qt6/QtCore/qlocale.h \
- /usr/include/qt6/QtWidgets/qabstractspinbox.h \
- /usr/include/qt6/QtGui/qvalidator.h \
- /usr/include/qt6/QtCore/qregularexpression.h \
- /usr/include/qt6/QtWidgets/qslider.h \
- /usr/include/qt6/QtWidgets/qabstractslider.h \
- /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
- /usr/include/qt6/QtWidgets/qrubberband.h \
- /usr/include/qt6/QtCore/QStringListModel \
- /usr/include/qt6/QtCore/qstringlistmodel.h \
- /usr/include/qt6/QtCore/qtmochelpers.h \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_graphicswindow.cpp \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../graphicswindow.h \
- /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_loginwindow.cpp \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../loginwindow.h \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_mainwindow.cpp \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../mainwindow.h \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_noteswindow.cpp \
- /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../noteswindow.h \
- /usr/include/qt6/QtWidgets/QListWidget \
- /usr/include/qt6/QtWidgets/qlistwidget.h \
- /usr/include/qt6/QtWidgets/qlistview.h \
- /usr/include/qt6/QtWidgets/QLineEdit \
+ /usr/include/qt6/QtWidgets/QCalendarWidget \
+ /usr/include/qt6/QtWidgets/qcalendarwidget.h \
+ /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtCore/qdatetime.h \
+ /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtWidgets/QInputDialog \
+ /usr/include/qt6/QtWidgets/qinputdialog.h \
  /usr/include/qt6/QtWidgets/qlineedit.h \
- /usr/include/qt6/QtGui/qtextcursor.h \
+ /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
  /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtCore/QFile \
- /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfiledevice.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
+ /usr/include/qt6/QtWidgets/qdialog.h /usr/include/qt6/QtCore/QMap \
+ /usr/include/qt6/QtCore/qmap.h /usr/include/qt6/QtWidgets/QMenu \
+ /usr/include/qt6/QtWidgets/qmenu.h \
+ /usr/include/qt6/QtWidgets/QMessageBox \
+ /usr/include/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+ /usr/include/qt6/QtCore/QFile /usr/include/qt6/QtCore/qfile.h \
+ /usr/include/qt6/QtCore/qfiledevice.h \
  /usr/include/qt6/QtCore/qiodevice.h /usr/include/c++/13/filesystem \
  /usr/include/c++/13/bits/fs_fwd.h /usr/include/c++/13/bits/fs_path.h \
  /usr/include/c++/13/locale /usr/include/c++/13/bits/locale_facets.h \
@@ -366,8 +343,46 @@ CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
  /usr/include/qt6/QtCore/QDir /usr/include/qt6/QtCore/qdir.h \
  /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfileinfo.h \
- /usr/include/qt6/QtCore/qdatetime.h /usr/include/qt6/QtCore/qcalendar.h \
- /usr/include/qt6/QtCore/qtimezone.h \
+ /usr/include/qt6/QtCore/qtimezone.h /usr/include/qt6/QtCore/QDebug \
+ /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qtmochelpers.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_ctodolist.cpp \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../ctodolist.h \
+ /usr/include/qt6/QtWidgets/QMainWindow \
+ /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/QListView \
+ /usr/include/qt6/QtWidgets/qlistview.h \
+ /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/qt6/QtWidgets/qstyleoption.h \
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+ /usr/include/qt6/QtGui/qvalidator.h \
+ /usr/include/qt6/QtCore/qregularexpression.h \
+ /usr/include/qt6/QtWidgets/qslider.h \
+ /usr/include/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
+ /usr/include/qt6/QtWidgets/qrubberband.h \
+ /usr/include/qt6/QtCore/QStringListModel \
+ /usr/include/qt6/QtCore/qstringlistmodel.h \
+ /usr/include/qt6/QtWidgets/QStyledItemDelegate \
+ /usr/include/qt6/QtWidgets/qstyleditemdelegate.h \
+ /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_graphicswindow.cpp \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../graphicswindow.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_loginwindow.cpp \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../loginwindow.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../mainwindow.h \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_noteswindow.cpp \
+ /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../noteswindow.h \
+ /usr/include/qt6/QtWidgets/QListWidget \
+ /usr/include/qt6/QtWidgets/qlistwidget.h \
+ /usr/include/qt6/QtWidgets/qlistview.h \
+ /usr/include/qt6/QtWidgets/QLineEdit \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_registerwindow.cpp \
  /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/../../../../registerwindow.h \
  /home/maksym/projects/help/organizer_on_qt/build/Desktop-Debug/organizer_on_qt_autogen/EWIEGA46WW/moc_todowindow.cpp \

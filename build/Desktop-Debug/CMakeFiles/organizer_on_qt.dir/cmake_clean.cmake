@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/organizer_on_qt_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/organizer_on_qt_autogen.dir/ParseCache.txt"
   "organizer_on_qt_autogen"
+  "CMakeFiles/organizer_on_qt.dir/calendarwindow.cpp.o"
+  "CMakeFiles/organizer_on_qt.dir/calendarwindow.cpp.o.d"
   "CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.o"
   "CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.o.d"
   "CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o"

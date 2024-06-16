@@ -20,7 +20,7 @@ registerWindow::~registerWindow()
 void registerWindow::on_loginButton_clicked()
 {
     // Створюємо інстанцію registerWindow
-    loginWindow *logWindow = new loginWindow();
+    LoginWindow *logWindow = new LoginWindow();
     // Показуємо вікно реєстрації
     logWindow->show();
     // Закриваємо вікно логіну (опціонально)
@@ -57,7 +57,7 @@ void registerWindow::on_registerButton_clicked()
         if (!saveUser(username, password)) return;
         QMessageBox::information(this, "Success", "User registered successfully!");
         // Optionally, close the registration window and open the login window
-        loginWindow *logWindow = new loginWindow();
+        LoginWindow *logWindow = new LoginWindow();
         logWindow->show();
         this->close();
     }

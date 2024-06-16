@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/maksym/projects/help/organizer_on_qt/calendarwindow.cpp" "CMakeFiles/organizer_on_qt.dir/calendarwindow.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/calendarwindow.cpp.o.d"
   "/home/maksym/projects/help/organizer_on_qt/ctodolist.cpp" "CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.o.d"
   "/home/maksym/projects/help/organizer_on_qt/graphicswindow.cpp" "CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.o.d"
   "/home/maksym/projects/help/organizer_on_qt/loginwindow.cpp" "CMakeFiles/organizer_on_qt.dir/loginwindow.cpp.o" "gcc" "CMakeFiles/organizer_on_qt.dir/loginwindow.cpp.o.d"

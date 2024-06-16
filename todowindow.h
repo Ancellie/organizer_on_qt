@@ -1,5 +1,5 @@
-#ifndef TODOWINDOW_H
-#define TODOWINDOW_H
+#ifndef todoWindow_H
+#define todoWindow_H
 
 #include <QWidget>
 
@@ -24,4 +24,4 @@ private:
     Ui::todoWindow *ui;
 };
 
-#endif // TODOWINDOW_H
+#endif // todoWindow_H

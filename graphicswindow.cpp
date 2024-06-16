@@ -3,7 +3,7 @@
 #include "ui_graphicswindow.h"
 #include "userdata.h"
 
-graphicsWindow::graphicsWindow(QWidget *parent)
+GraphicsWindow::GraphicsWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::graphicsWindow)
 {
@@ -14,12 +14,12 @@ graphicsWindow::graphicsWindow(QWidget *parent)
     updatePlot();
 }
 
-void graphicsWindow::closeEvent(QCloseEvent *event)
+void GraphicsWindow::closeEvent(QCloseEvent *event)
 {
     saveTable();
 }
 
-void graphicsWindow::loadTable()
+void GraphicsWindow::loadTable()
 {
     QFile file("tables/" + UserData::username + ".csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -57,7 +57,7 @@ void graphicsWindow::loadTable()
 }
 
 
-void graphicsWindow::saveTable()
+void GraphicsWindow::saveTable()
 {
     QDir tablesDir = QString::fromStdString("/tables");
     if (!tablesDir.exists()) {
@@ -99,12 +99,12 @@ void graphicsWindow::saveTable()
 }
 
 
-graphicsWindow::~graphicsWindow()
+GraphicsWindow::~GraphicsWindow()
 {
     delete ui;
 }
 
-void graphicsWindow::on_pushButton_clicked()
+void GraphicsWindow::on_pushButton_clicked()
 {
     // Створюємо інстанцію registerWindow
     mainWindow *mainwindow = new mainWindow();
@@ -114,12 +114,12 @@ void graphicsWindow::on_pushButton_clicked()
     this->close();
 }
 
-void graphicsWindow::on_tableWidget_cellChanged(int row, int column)
+void GraphicsWindow::on_tableWidget_cellChanged(int row, int column)
 {
     updatePlot();
 }
 
-void graphicsWindow::updatePlot()
+void GraphicsWindow::updatePlot()
 {
     ui->customPlot->clearGraphs(); // Очищуємо графіки
 
@@ -151,14 +151,14 @@ void graphicsWindow::updatePlot()
     redraw();
 }
 
-void graphicsWindow::redraw() {
+void GraphicsWindow::redraw() {
     ui->customPlot->rescaleAxes();
     ui->customPlot->replot();
 }
 
 
 
-void graphicsWindow::on_removeButton_clicked()
+void GraphicsWindow::on_removeButton_clicked()
 {
     bool ok;
     QString rowName = QInputDialog::getText(this, tr("Remove Row"),
@@ -178,7 +178,7 @@ void graphicsWindow::on_removeButton_clicked()
 }
 
 
-void graphicsWindow::on_addButton_clicked()
+void GraphicsWindow::on_addButton_clicked()
 {
     bool ok;
     QString rowName = QInputDialog::getText(this, tr("Add Row"),
@@ -193,7 +193,7 @@ void graphicsWindow::on_addButton_clicked()
 }
 
 
-void graphicsWindow::on_graphicsWindow_destroyed()
+void GraphicsWindow::on_graphicsWindow_destroyed()
 {
     saveTable();
 }

@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="notesButton">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>50</x>
      <y>330</y>
      <width>161</width>
      <height>81</height>
@@ -42,7 +42,7 @@
   <widget class="QPushButton" name="todoButton">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>230</x>
      <y>330</y>
      <width>161</width>
      <height>81</height>
@@ -55,7 +55,7 @@
   <widget class="QPushButton" name="grahicsButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>410</x>
      <y>330</y>
      <width>161</width>
      <height>81</height>
@@ -76,6 +76,19 @@
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Main menu&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="calendarButton">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>330</y>
+     <width>161</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calendar</string>
    </property>
   </widget>
  </widget>

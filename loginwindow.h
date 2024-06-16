@@ -9,13 +9,13 @@ class loginWindow;
 }
 QT_END_NAMESPACE
 
-class loginWindow : public QWidget
+class LoginWindow : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit loginWindow(QWidget *parent = nullptr);
-    ~loginWindow();
+    explicit LoginWindow(QWidget *parent = nullptr);
+    ~LoginWindow();
 
 private slots:
     void on_registerButton_clicked();

@@ -7,29 +7,26 @@
 #include "registerwindow.h"
 #include "userdata.h"
 
-loginWindow::loginWindow(QWidget *parent)
+LoginWindow::LoginWindow(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::loginWindow)
 {
     ui->setupUi(this);
 }
 
-loginWindow::~loginWindow()
+LoginWindow::~LoginWindow()
 {
     delete ui;
 }
 
-void loginWindow::on_registerButton_clicked()
+void LoginWindow::on_registerButton_clicked()
 {
-    // Створюємо інстанцію registerWindow
     registerWindow *regWindow = new registerWindow();
-    // Показуємо вікно реєстрації
     regWindow->show();
-    // Закриваємо вікно логіну (опціонально)
     this->close();
 }
 
-void loginWindow::on_loginButton_clicked()
+void LoginWindow::on_loginButton_clicked()
 {
     QString username = ui->userLineEdit->text();
     QString password = ui->passworLineEdit->text();
@@ -52,7 +49,7 @@ void loginWindow::on_loginButton_clicked()
     }
 }
 
-bool loginWindow::authenticateUser(const QString &username, const QString &password)
+bool LoginWindow::authenticateUser(const QString &username, const QString &password)
 {
     QFile file("users.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/organizer_on_qt_autogen"
+  "organizer_on_qt_autogen/include/ui_calendarwindow.h"
   "organizer_on_qt_autogen/include/ui_graphicswindow.h"
   "organizer_on_qt_autogen/include/ui_loginwindow.h"
   "organizer_on_qt_autogen/include/ui_mainwindow.h"

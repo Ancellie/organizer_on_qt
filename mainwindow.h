@@ -24,6 +24,8 @@ private slots:
 
     void on_grahicsButton_clicked();
 
+    void on_calendarButton_clicked();
+
 private:
     Ui::mainWindow *ui;
 };

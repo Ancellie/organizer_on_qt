@@ -40,6 +40,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         noteswindow.h noteswindow.cpp noteswindow.ui
         ctodolist.h ctodolist.cpp
         userdata.h userdata.cpp
+        calendarwindow.h calendarwindow.cpp calendarwindow.ui
 
     )
 # Define target properties for Android with Qt 6 as:

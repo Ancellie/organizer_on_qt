@@ -7,13 +7,13 @@ namespace Ui {
 class graphicsWindow;
 }
 
-class graphicsWindow : public QWidget
+class GraphicsWindow : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit graphicsWindow(QWidget *parent = nullptr);
-    ~graphicsWindow();
+    explicit GraphicsWindow(QWidget *parent = nullptr);
+    ~GraphicsWindow();
 
 private slots:
     void on_pushButton_clicked();

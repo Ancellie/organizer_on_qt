@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "calendarwindow.h"
 #include "graphicswindow.h"
 #include "loginwindow.h"
 #include "ui_mainwindow.h"
@@ -20,40 +21,48 @@ mainWindow::~mainWindow()
 
 void mainWindow::on_exitButton_clicked()
 {
-    // Створюємо інстанцію registerWindow
-    loginWindow *logWindow = new loginWindow();
-    // Показуємо вікно реєстрації
+
+    LoginWindow *logWindow = new LoginWindow();
+
     logWindow->show();
-    // Закриваємо вікно логіну (опціонально)
+
     this->close();
 }
 
 void mainWindow::on_notesButton_clicked()
 {
-    // Створюємо інстанцію registerWindow
+
     notesWindow *noteswindow = new notesWindow();
-    // Показуємо вікно реєстрації
+
     noteswindow->show();
-    // Закриваємо вікно логіну (опціонально)
+
     this->close();
 }
 
 void mainWindow::on_todoButton_clicked()
 {
-    // Створюємо інстанцію registerWindow
+
     CToDoList *todowindow = new CToDoList();
-    // Показуємо вікно реєстрації
+
     todowindow->show();
-    // Закриваємо вікно логіну (опціонально)
+
     this->close();
 }
 
 void mainWindow::on_grahicsButton_clicked()
 {
-    // Створюємо інстанцію registerWindow
-    graphicsWindow *graphicswindow = new graphicsWindow();
-    // Показуємо вікно реєстрації
+
+    GraphicsWindow *graphicswindow = new GraphicsWindow();
+
     graphicswindow->show();
-    // Закриваємо вікно логіну (опціонально)
+
     this->close();
 }
+
+void mainWindow::on_calendarButton_clicked()
+{
+    CalendarWindow *calendarwindow = new CalendarWindow();
+    calendarwindow->show();
+    this->close();
+}
+

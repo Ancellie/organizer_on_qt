@@ -321,6 +321,10 @@ CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.o: \
  /usr/include/qt6/QtWidgets/qrubberband.h \
  /usr/include/qt6/QtCore/QStringListModel \
  /usr/include/qt6/QtCore/qstringlistmodel.h \
+ /usr/include/qt6/QtWidgets/QStyledItemDelegate \
+ /usr/include/qt6/QtWidgets/qstyleditemdelegate.h \
+ /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
+ /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtGui/qpen.h \
  /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
  /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
@@ -364,9 +368,18 @@ CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.o: \
  /usr/include/qt6/QtWidgets/qmessagebox.h \
  /usr/include/qt6/QtWidgets/qdialog.h \
  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+ /home/maksym/projects/help/organizer_on_qt/userdata.h \
+ /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
  /usr/include/qt6/QtCore/QTextStream \
  /usr/include/qt6/QtCore/qtextstream.h /usr/include/qt6/QtCore/QDir \
  /usr/include/qt6/QtCore/qdir.h /usr/include/qt6/QtCore/qfile.h \
  /usr/include/qt6/QtCore/qfileinfo.h /usr/include/qt6/QtCore/qdatetime.h \
  /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qtimezone.h \
- /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h
+ /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtWidgets/QInputDialog \
+ /usr/include/qt6/QtWidgets/qinputdialog.h \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
+ /usr/include/qt6/QtGui/qtextcursor.h \
+ /usr/include/qt6/QtGui/qtextformat.h \
+ /usr/include/qt6/QtWidgets/QDateTimeEdit \
+ /usr/include/qt6/QtWidgets/qdatetimeedit.h
