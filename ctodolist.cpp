@@ -16,7 +16,6 @@
 CToDoList::CToDoList()
 {
     QWidget* pWidget = new QWidget(this);
-    pWidget->setStyleSheet("background-color: #ECF0F1");
     setCentralWidget(pWidget);
 
     QVBoxLayout* pMainLayout = new QVBoxLayout();
