@@ -17,11 +17,9 @@ protected slots:
     void onAdd();
     void onRemove();
     void onChangeWidgetClicked();
-    void loadTasksFromFile(const QString &fileName);
-    void saveTasksToFile(const QString &fileName);
-    QString getUserTasksFilePath() const;
 
-
+protected:
+    void closeEvent(QCloseEvent *event) override;
 
 private:
     QListView* m_pwPending = nullptr;
@@ -29,6 +27,10 @@ private:
 
     QAction* m_pActAdd = nullptr;
     QAction* m_pActRemove = nullptr;
+
+    QString getUserTasksFilePath() const;
+    void loadTasksFromFile(const QString &fileName);
+    void saveTasksToFile(const QString &fileName);
 };
 
 #endif // TODOLIST_H

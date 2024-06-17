@@ -93,25 +93,6 @@ CToDoList::CToDoList()
     loadTasksFromFile(getUserTasksFilePath());
 }
 
-void CToDoList::onAdd()
-{
-    bool ok;
-    QString text = QInputDialog::getText(this, tr("Add Task"),
-                                         tr("Task description:"), QLineEdit::Normal,
-                                         "", &ok);
-    if (ok && !text.isEmpty()) {
-        int days = QInputDialog::getInt(this, tr("Set Due Date"),
-                                        tr("Enter number of days for this task:"), 1, 1, 365);
-
-        QDateTime dueDate = QDateTime::currentDateTime().addDays(days);
-        QString taskWithDate = text + "( Do to " + dueDate.toString("yyyy-MM-dd") + ")";
-
-        m_pwPending->model()->insertRow(m_pwPending->model()->rowCount());
-        QModelIndex oIndex = m_pwPending->model()->index(m_pwPending->model()->rowCount() - 1, 0);
-        m_pwPending->model()->setData(oIndex, taskWithDate);
-    }
-}
-
 void CToDoList::onRemove()
 {
     QModelIndex oIndex = m_pwPending->currentIndex();
@@ -127,10 +108,39 @@ void CToDoList::onRemove()
 
 void CToDoList::onChangeWidgetClicked()
 {
-    saveTasksToFile(getUserTasksFilePath());
     mainWindow *mainwindow = new mainWindow();
     mainwindow->show();
     this->close();
+}
+
+void CToDoList::closeEvent(QCloseEvent *event)
+{
+    saveTasksToFile(getUserTasksFilePath());
+    QWidget::closeEvent(event);
+}
+
+void CToDoList::onAdd()
+{
+    bool ok;
+    QString text = QInputDialog::getText(this, tr("Add Task"),
+                                         tr("Task description:"), QLineEdit::Normal,
+                                         "", &ok);
+    if (ok && !text.isEmpty()) {
+        int days = QInputDialog::getInt(this, tr("Set Due Date"),
+                                        tr("Enter number of days for this task:"), 1, 1, 365);
+
+        QString dueDateString = QString::number(days);
+        QString taskWithDate;
+        if (days == 1) {
+            taskWithDate = "!||" + text + "||" + dueDateString;
+        } else {
+            taskWithDate = "o||" + text + "||" + dueDateString;
+        }
+
+        m_pwPending->model()->insertRow(m_pwPending->model()->rowCount());
+        QModelIndex oIndex = m_pwPending->model()->index(m_pwPending->model()->rowCount() - 1, 0);
+        m_pwPending->model()->setData(oIndex, taskWithDate);
+    }
 }
 
 void CToDoList::loadTasksFromFile(const QString &fileName)
@@ -152,9 +162,15 @@ void CToDoList::loadTasksFromFile(const QString &fileName)
         if (parts.size() == 3) {
             QString task = parts[0];
             QString status = parts[1].trimmed();
-            QString dueDate = parts[2].trimmed();
+            QString days = parts[2].trimmed();
 
-            QString taskWithDate = task + " (" + dueDate + ")";
+            QString taskWithDate;
+            int daysInt = days.toInt();
+            if (daysInt == 1) {
+                taskWithDate = "!||" + task + "||" + days;
+            } else {
+                taskWithDate = "o||" + task + "||" + days;
+            }
 
             if (status == "pending") {
                 pendingTasks << taskWithDate;
@@ -176,6 +192,7 @@ void CToDoList::loadTasksFromFile(const QString &fileName)
     qDebug() << "Completed tasks:" << completedTasks;
 }
 
+
 void CToDoList::saveTasksToFile(const QString &fileName)
 {
     QDir dir;
@@ -194,19 +211,16 @@ void CToDoList::saveTasksToFile(const QString &fileName)
     QStringList pendingTasks = static_cast<QStringListModel*>(m_pwPending->model())->stringList();
     QStringList completedTasks = static_cast<QStringListModel*>(m_pwCompleted->model())->stringList();
 
-    for (const QString &taskWithDate : pendingTasks) {
-        int pos = taskWithDate.lastIndexOf("(");
-        QString task = taskWithDate.left(pos - 1).trimmed();
-        QString dueDate = taskWithDate.mid(pos + 1, taskWithDate.length() - pos - 2).trimmed();
-        out << task << ", pending, " << dueDate << "\n";
-    }
+    auto saveTasks = [&](const QStringList &tasks, const QString &status) {
+        for (const QString &taskWithDate : tasks) {
+            QString task = taskWithDate.section("||", 1, 1).trimmed();
+            QString days = taskWithDate.section("||", 2, 2).trimmed();
+            out << task << ", " << status << ", " << days << "\n";
+        }
+    };
 
-    for (const QString &taskWithDate : completedTasks) {
-        int pos = taskWithDate.lastIndexOf("(");
-        QString task = taskWithDate.left(pos - 1).trimmed();
-        QString dueDate = taskWithDate.mid(pos + 1, taskWithDate.length() - pos - 2).trimmed();
-        out << task << ", completed, " << dueDate << "\n";
-    }
+    saveTasks(pendingTasks, "pending");
+    saveTasks(completedTasks, "completed");
 
     file.close();
 
@@ -214,6 +228,8 @@ void CToDoList::saveTasksToFile(const QString &fileName)
     qDebug() << "Pending tasks:" << pendingTasks;
     qDebug() << "Completed tasks:" << completedTasks;
 }
+
+
 
 QString CToDoList::getUserTasksFilePath() const
 {
