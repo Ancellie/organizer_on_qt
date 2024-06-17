@@ -24,8 +24,6 @@ set(PROJECT_SOURCES
 )
 
 
-
-
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(organizer_on_qt
         MANUAL_FINALIZATION
@@ -90,3 +88,5 @@ install(TARGETS organizer_on_qt
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(organizer_on_qt)
 endif()
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/static DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

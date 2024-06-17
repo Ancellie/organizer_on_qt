@@ -13,84 +13,116 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="exitButton">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>510</y>
-     <width>141</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>exit</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="notesButton">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>330</y>
-     <width>161</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Notes</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="todoButton">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>330</y>
-     <width>161</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TODO</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="grahicsButton">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>330</y>
-     <width>161</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Graphics</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>90</y>
-     <width>251</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Main menu&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="calendarButton">
-   <property name="geometry">
-    <rect>
-     <x>590</x>
-     <y>330</y>
-     <width>161</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Calendar</string>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>778</width>
+       <height>188</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Main menu&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>152</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="notesButton">
+       <property name="text">
+        <string>Notes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="todoButton">
+       <property name="text">
+        <string>TODO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="calendarButton">
+       <property name="text">
+        <string>Calendar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="grahicsButton">
+       <property name="text">
+        <string>Graphics</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>152</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exitButton">
+       <property name="text">
+        <string>exit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

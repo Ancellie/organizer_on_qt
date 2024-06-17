@@ -75,11 +75,11 @@ CToDoList::CToDoList()
     addToolBar(pToolBar);
 
     m_pActAdd = new QAction(this);
-    m_pActAdd->setIcon(QIcon("D:/qt/organizer_on_qt/static/add.jpg"));
+    m_pActAdd->setIcon(QIcon("static/add.jpg"));
     connect(m_pActAdd, &QAction::triggered, this, &CToDoList::onAdd);
 
     m_pActRemove = new QAction(this);
-    m_pActRemove->setIcon(QIcon("D:/qt/organizer_on_qt/static/remove.png"));
+    m_pActRemove->setIcon(QIcon("static/remove.png"));
     connect(m_pActRemove, &QAction::triggered, this, &CToDoList::onRemove);
 
     pToolBar->addAction(m_pActAdd);
@@ -88,6 +88,8 @@ CToDoList::CToDoList()
     QPushButton* changeWidgetButton = new QPushButton("Back to menu", this);
     connect(changeWidgetButton, &QPushButton::clicked, this, &CToDoList::onChangeWidgetClicked);
     pMainLayout->addWidget(changeWidgetButton);
+
+    resize(800, 600);
 
     loadTasksFromFile(getUserTasksFilePath());
 }
