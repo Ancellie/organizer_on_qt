@@ -72,3 +72,17 @@
 633	10895	7403538843274194	CMakeFiles/organizer_on_qt.dir/calendarwindow.cpp.obj	e64198fded6d0212
 610	17876	7403538843044188	CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.obj	b1c6d75451025052
 17876	18361	7403539015705911	organizer_on_qt.exe	5a87e01da40218f3
+333	2580	7404083553230611	organizer_on_qt_autogen/timestamp	64c94a6b054d92cb
+333	2580	7404083553230611	organizer_on_qt_autogen/mocs_compilation.cpp	64c94a6b054d92cb
+333	2580	7404083553230611	D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/timestamp	64c94a6b054d92cb
+333	2580	7404083553230611	D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_on_qt_autogen/mocs_compilation.cpp	64c94a6b054d92cb
+2621	15694	7404083555816956	CMakeFiles/organizer_on_qt.dir/loginwindow.cpp.obj	d2984dc03ddd7741
+2645	16001	7404083556056810	CMakeFiles/organizer_on_qt.dir/todowindow.cpp.obj	4e4cb4091f98d637
+2635	17278	7404083555956799	CMakeFiles/organizer_on_qt.dir/mainwindow.cpp.obj	b198416e2ddd1ebb
+2628	17337	7404083555886885	CMakeFiles/organizer_on_qt.dir/registerwindow.cpp.obj	33592cff770700c6
+2581	18038	7404083555426816	CMakeFiles/organizer_on_qt.dir/organizer_on_qt_autogen/mocs_compilation.cpp.obj	196bbf409176ca01
+2678	18307	7404083556386796	CMakeFiles/organizer_on_qt.dir/ctodolist.cpp.obj	cef7befaf7bfac85
+2664	18540	7404083556246843	CMakeFiles/organizer_on_qt.dir/noteswindow.cpp.obj	45e9ddab3368bae0
+2687	19471	7404083556476781	CMakeFiles/organizer_on_qt.dir/calendarwindow.cpp.obj	e64198fded6d0212
+2654	26941	7404083556146838	CMakeFiles/organizer_on_qt.dir/graphicswindow.cpp.obj	b1c6d75451025052
+26941	30905	7404083799020473	organizer_on_qt.exe	5a87e01da40218f3

@@ -8,9 +8,10 @@
 #include <QCloseEvent>
 #include <QTextStream>
 
-CalendarWindow::CalendarWindow(QWidget *parent)
+CalendarWindow::CalendarWindow(bool isGroup, QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::CalendarWindow)
+    , ui(new Ui::CalendarWindow),
+    isGroup(isGroup)
 {
     ui->setupUi(this);
 
@@ -134,6 +135,22 @@ void CalendarWindow::saveBookmarks()
     QString filePath = dirPath + "/" + UserData::username + ".csv";
     QFile file(filePath);
 
+    if(isGroup){
+        filePath = "events.csv";
+        QFile log("events.pub");
+        if (!log.open(QIODevice::WriteOnly | QIODevice::Text))
+        {
+            qDebug() << "Failed to open file for writing";
+            return;
+        }
+        QDateTime now = QDateTime::currentDateTime();
+        QString formattedTime = now.toString("yyyy-MM-dd HH:mm:ss");
+        QTextStream out(&log);
+
+        out << UserData::username << "::" << formattedTime;
+        log.close();
+    }
+
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         QTextStream out(&file);
@@ -150,10 +167,33 @@ void CalendarWindow::saveBookmarks()
 
 void CalendarWindow::loadBookmarks()
 {
+    // Очищаємо всі позначки
+    for (auto it = bookmarks.begin(); it != bookmarks.end(); ++it) {
+        QDate date = it.key();
+        if (originalFormats.contains(date)) {
+            ui->calendarWidget->setDateTextFormat(date, originalFormats[date]);
+            originalFormats.remove(date);
+        } else {
+            QTextCharFormat format;
+            ui->calendarWidget->setDateTextFormat(date, format);
+        }
+    }
+    bookmarks.clear();
+
     QString dirPath = "events";
     QString filePath = dirPath + "/" + UserData::username + ".csv";
     QFile file(filePath);
-
+    if(isGroup){
+        filePath = "events.csv";
+        QFile file1("events.pub");
+        if (file1.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+            QTextStream in(&file1);
+            QString firstLine = in.readLine();
+            ui->label_2->setText(firstLine);
+            file1.close();
+        }
+    }
     if (file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         QTextStream in(&file);
@@ -188,5 +228,14 @@ void CalendarWindow::on_backButton_clicked()
     mainWindow *mainwindow = new mainWindow();
     mainwindow->show();
     this->close();
+}
+
+void CalendarWindow::on_changeButton_clicked()
+{
+    QString text = isGroup ? "Change to private" : "Change to public";
+    ui->changeButton->setText(text);
+    saveBookmarks();
+    isGroup = !isGroup;
+    loadBookmarks();
 }
 

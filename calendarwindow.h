@@ -20,7 +20,7 @@ class CalendarWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit CalendarWindow(QWidget *parent = nullptr);
+    explicit CalendarWindow(bool isGroup = false, QWidget *parent = nullptr);
     ~CalendarWindow();
 
 protected:
@@ -33,7 +33,10 @@ private slots:
 
     void on_backButton_clicked();
 
+    void on_changeButton_clicked();
+
 private:
+    bool isGroup;
     Ui::CalendarWindow *ui;
     QMap<QDate, QString> bookmarks; // Зберігання закладок
     QMap<QDate, QTextCharFormat> originalFormats; // Зберігання оригінальних форматів

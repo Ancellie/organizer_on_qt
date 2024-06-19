@@ -2,13 +2,16 @@
 #include "mainwindow.h"
 #include "ui_graphicswindow.h"
 #include "userdata.h"
+#include <QDateTime>
 
-GraphicsWindow::GraphicsWindow(QWidget *parent)
+GraphicsWindow::GraphicsWindow(bool isGroup, QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::graphicsWindow)
+    , ui(new Ui::graphicsWindow),
+    isGroup(isGroup)
 {
     ui->setupUi(this);
     ui->tableWidget->verticalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+
 
     loadTable();
     updatePlot();
@@ -21,7 +24,23 @@ void GraphicsWindow::closeEvent(QCloseEvent *event)
 
 void GraphicsWindow::loadTable()
 {
-    QFile file("tables/" + UserData::username + ".csv");
+    // Clear the existing data in the table
+    ui->tableWidget->clearContents();
+    ui->tableWidget->setRowCount(0);
+
+    QString filepath = "tables/" + UserData::username + ".csv";
+    if(isGroup){
+        filepath = "tables.csv";
+        QFile file1("tables.pub");
+        if (file1.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+            QTextStream in(&file1);
+            QString firstLine = in.readLine();
+            ui->label_2->setText(firstLine);
+            file1.close();
+        }
+    }
+    QFile file(filepath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file for reading";
@@ -63,7 +82,24 @@ void GraphicsWindow::saveTable()
     if (!tablesDir.exists()) {
         QDir::current().mkdir("tables");
     }
-    QFile file("tables/" + UserData::username + ".csv");
+    QString filepath = "tables/" + UserData::username + ".csv";
+    if(isGroup){
+        filepath = "tables.csv";
+        QFile log("tables.pub");
+        if (!log.open(QIODevice::WriteOnly | QIODevice::Text))
+        {
+            qDebug() << "Failed to open file for writing";
+            return;
+        }
+        QDateTime now = QDateTime::currentDateTime();
+        QString formattedTime = now.toString("yyyy-MM-dd HH:mm:ss");
+        QTextStream out(&log);
+
+        out << UserData::username << "::" << formattedTime;
+        log.close();
+
+    }
+    QFile file(filepath);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file for writing";
@@ -196,5 +232,16 @@ void GraphicsWindow::on_addButton_clicked()
 void GraphicsWindow::on_graphicsWindow_destroyed()
 {
     saveTable();
+}
+
+
+void GraphicsWindow::on_changeButton_clicked()
+{
+    QString text = isGroup ? "Change to private" : "Change to public";
+    ui->changeButton->setText(text);
+    saveTable();
+    isGroup = !isGroup;
+    loadTable();
+    updatePlot();
 }
 

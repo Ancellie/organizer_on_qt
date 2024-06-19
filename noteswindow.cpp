@@ -6,10 +6,11 @@
 #include <QDebug>
 #include <QCloseEvent>
 
-notesWindow::notesWindow(QWidget *parent)
+notesWindow::notesWindow(bool isGroup, QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::notesWindow)
     , listWidget(new QListWidget(this))
+    , isGroup(isGroup)
 {
     ui->setupUi(this);
 

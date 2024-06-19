@@ -22,6 +22,13 @@
     </widget>
    </item>
    <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QCalendarWidget" name="calendarWidget"/>
    </item>
    <item>
@@ -49,6 +56,19 @@
        </property>
        <property name="text">
         <string>Back to menu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="changeButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Change to public</string>
        </property>
       </widget>
      </item>

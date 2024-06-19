@@ -16,7 +16,7 @@ class notesWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit notesWindow(QWidget *parent = nullptr);
+    explicit notesWindow(bool isGroup = false, QWidget *parent = nullptr);
     ~notesWindow();
 
 protected:
@@ -27,6 +27,7 @@ private slots:
     void on_lineEdit_textChanged(const QString &text);
 
 private:
+    bool isGroup;
     Ui::notesWindow *ui;
     QListWidget *listWidget;
 
