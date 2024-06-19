@@ -83,12 +83,25 @@ void notesWindow::removeLineEdit(int row)
 
 void notesWindow::loadNotes()
 {
-    QString filePath = "notes/" + UserData::username + ".txt";
-    QFile file(filePath);
+    listWidget->clear();
+    ui->label_2->setText("");
+    QString filepath = "notes/" + UserData::username + ".csv";
+    if(isGroup){
+        filepath = "notes.csv";
+        QFile file1("notes.pub");
+        if (file1.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+            QTextStream in(&file1);
+            QString firstLine = in.readLine();
+            ui->label_2->setText(firstLine);
+            file1.close();
+        }
+    }
+    QFile file(filepath);
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        qDebug() << "Failed to open file for reading: " << filePath;
+        qDebug() << "Failed to open file for reading: " << filepath;
         addLineEdit();
         return;
     }
@@ -111,24 +124,31 @@ void notesWindow::loadNotes()
 
 void notesWindow::saveNotes()
 {
-    QString dirPath = "notes";
-    QDir dir;
-
-    if (!dir.exists(dirPath))
-    {
-        if (!dir.mkpath(dirPath))
+    QDir notesDir = QString::fromStdString("/notes");
+    if (!notesDir.exists()) {
+        QDir::current().mkdir("notes");
+    }
+    QString filepath = "notes/" + UserData::username + ".csv";
+    if(isGroup){
+        filepath = "notes.csv";
+        QFile log("notes.pub");
+        if (!log.open(QIODevice::WriteOnly | QIODevice::Text))
         {
-            qDebug() << "Failed to create directory: " << dirPath;
+            qDebug() << "Failed to open file for writing";
             return;
         }
+        QDateTime now = QDateTime::currentDateTime();
+        QString formattedTime = now.toString("yyyy-MM-dd HH:mm:ss");
+        QTextStream out(&log);
+
+        out << UserData::username << "::" << formattedTime;
+        log.close();
+
     }
-
-    QString filePath = dirPath + "/" + UserData::username + ".txt";
-    QFile file(filePath);
-
+    QFile file(filepath);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
-        qDebug() << "Failed to open file for writing: " << filePath;
+        qDebug() << "Failed to open file for writing: " << filepath;
         return;
     }
 
@@ -144,3 +164,14 @@ void notesWindow::saveNotes()
 
     file.close();
 }
+
+
+void notesWindow::on_changeButton_clicked()
+{
+    QString text = isGroup ? "Change to private" : "Change to public";
+    ui->changeButton->setText(text);
+    saveNotes();
+    isGroup = !isGroup;
+    loadNotes();
+}
+
