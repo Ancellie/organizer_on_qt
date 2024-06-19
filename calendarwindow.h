@@ -46,6 +46,7 @@ private:
     void showEventDetails(const QDate &date);
     void saveBookmarks();
     void loadBookmarks();
+    void clearAllBookmarks();
 };
 
 #endif // CALENDARWINDOW_H

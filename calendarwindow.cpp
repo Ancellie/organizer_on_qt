@@ -133,7 +133,6 @@ void CalendarWindow::saveBookmarks()
     }
 
     QString filePath = dirPath + "/" + UserData::username + ".csv";
-    QFile file(filePath);
 
     if(isGroup){
         filePath = "events.csv";
@@ -151,6 +150,8 @@ void CalendarWindow::saveBookmarks()
         log.close();
     }
 
+    QFile file(filePath);
+
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         QTextStream out(&file);
@@ -167,22 +168,8 @@ void CalendarWindow::saveBookmarks()
 
 void CalendarWindow::loadBookmarks()
 {
-    // Очищаємо всі позначки
-    for (auto it = bookmarks.begin(); it != bookmarks.end(); ++it) {
-        QDate date = it.key();
-        if (originalFormats.contains(date)) {
-            ui->calendarWidget->setDateTextFormat(date, originalFormats[date]);
-            originalFormats.remove(date);
-        } else {
-            QTextCharFormat format;
-            ui->calendarWidget->setDateTextFormat(date, format);
-        }
-    }
-    bookmarks.clear();
-
     QString dirPath = "events";
     QString filePath = dirPath + "/" + UserData::username + ".csv";
-    QFile file(filePath);
     if(isGroup){
         filePath = "events.csv";
         QFile file1("events.pub");
@@ -194,6 +181,7 @@ void CalendarWindow::loadBookmarks()
             file1.close();
         }
     }
+    QFile file(filePath);
     if (file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         QTextStream in(&file);
@@ -234,8 +222,24 @@ void CalendarWindow::on_changeButton_clicked()
 {
     QString text = isGroup ? "Change to private" : "Change to public";
     ui->changeButton->setText(text);
-    saveBookmarks();
-    isGroup = !isGroup;
-    loadBookmarks();
+    saveBookmarks(); // Зберігаємо поточні закладки перед зміною режиму
+    clearAllBookmarks(); // Очищаємо всі закладки перед завантаженням нових
+    isGroup = !isGroup; // Зміна режиму
+    loadBookmarks(); // Завантаження нових закладок відповідно до нового режиму
 }
 
+void CalendarWindow::clearAllBookmarks()
+{
+    // Очищаємо всі позначки
+    for (auto it = bookmarks.begin(); it != bookmarks.end(); ++it) {
+        QDate date = it.key();
+        if (originalFormats.contains(date)) {
+            ui->calendarWidget->setDateTextFormat(date, originalFormats[date]);
+            originalFormats.remove(date);
+        } else {
+            QTextCharFormat format;
+            ui->calendarWidget->setDateTextFormat(date, format);
+        }
+    }
+    bookmarks.clear();
+}
