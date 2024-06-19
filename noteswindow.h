@@ -26,6 +26,9 @@ private slots:
     void on_backButton_clicked();
     void on_lineEdit_textChanged(const QString &text);
 
+
+    void on_changeButton_clicked();
+
 private:
     bool isGroup;
     Ui::notesWindow *ui;
