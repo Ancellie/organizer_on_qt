@@ -1,5 +1,4 @@
 #include "ctodolist.h"
-#include <QLabel>
 #include <QToolBar>
 #include <QBoxLayout>
 #include <QPushButton>
@@ -11,7 +10,9 @@
 #include <QDir>
 #include <QDebug>
 #include <QInputDialog>
+#include <QDesktopServices>
 #include <QDateTimeEdit>
+#include <QRegularExpression>>
 
 CToDoList::CToDoList()
 {
@@ -25,6 +26,11 @@ CToDoList::CToDoList()
     pMainLayout->addWidget(pwTitle);
     pwTitle->setAlignment(Qt::AlignCenter);
     pwTitle->setStyleSheet("font-size: 30pt; margin: 10%;");
+
+    QLabel* modeLabel = new QLabel("Mode: Private", this);  // Додано label для відображення режиму
+    pMainLayout->addWidget(modeLabel);
+    modeLabel->setAlignment(Qt::AlignRight);
+    modeLabel->setStyleSheet("font-size: 12pt; margin-right: 10%;");
 
     QHBoxLayout* pHLayoutLabels = new QHBoxLayout();
     pMainLayout->addLayout(pHLayoutLabels);
@@ -63,7 +69,6 @@ CToDoList::CToDoList()
          "border: 1px solid #C0392B; }"
          "QListView::item::hover { background-color: #C0392B }");
 
-
     m_pwCompleted->setStyleSheet
         ("QListView { font-size: 20pt; font-weight: bold; }"
          "QListView::item { background-color: #2ECC71; padding: 10%;"
@@ -81,8 +86,18 @@ CToDoList::CToDoList()
     m_pActRemove->setIcon(QIcon("static/remove.png"));
     connect(m_pActRemove, &QAction::triggered, this, &CToDoList::onRemove);
 
+    m_pActAddURL = new QAction(this);
+    m_pActAddURL->setIcon(QIcon("static/add_url.png")); // Assuming you have an icon for the URL
+    connect(m_pActAddURL, &QAction::triggered, this, &CToDoList::onAddURL);
+
+    pToolBar->addAction(m_pActAddURL);
+
     pToolBar->addAction(m_pActAdd);
     pToolBar->addAction(m_pActRemove);
+
+    QPushButton* changeModeButton = new QPushButton("Open docs", this);
+    connect(changeModeButton, &QPushButton::clicked, this, &CToDoList::onChangeModeClicked);
+    pMainLayout->addWidget(changeModeButton);
 
     QPushButton* changeWidgetButton = new QPushButton("Back to menu", this);
     connect(changeWidgetButton, &QPushButton::clicked, this, &CToDoList::onChangeWidgetClicked);
@@ -233,6 +248,57 @@ void CToDoList::saveTasksToFile(const QString &fileName)
 
 QString CToDoList::getUserTasksFilePath() const
 {
-    // Assuming UserData::username is available and contains the current user's username
-    return "tasks/" + UserData::username + ".csv";
+    // Враховуємо режим для збереження завдань у різних файлах
+    QString fileName = UserData::username + ".csv";
+    return "tasks/" + fileName;
+}
+
+void CToDoList::onChangeModeClicked()
+{
+    QFile file("docsURL");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Failed to open file for reading:" << "docsURL";
+        QMessageBox::warning(this, tr("Error"), tr("Could not open the file to read the URL."));
+        return;
+    }
+
+    QTextStream in(&file);
+    QString url = in.readLine();
+    file.close();
+
+    if (!url.isEmpty()) {
+        QDesktopServices::openUrl(QUrl(url));
+        qDebug() << "URL opened:" << url;
+    } else {
+        QMessageBox::warning(this, tr("Error"), tr("The URL is empty."));
+    }
+}
+
+void CToDoList::onAddURL()
+{
+    QFile file("docsURL");
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Failed to open file for writing:" << "docsURL";
+        return;
+    }
+
+    QTextStream out(&file);
+    bool ok;
+    QString url = QInputDialog::getText(this, tr("Add URL"),
+                                        tr("URL:"), QLineEdit::Normal,
+                                        "", &ok);
+    if (ok && !url.isEmpty()) {
+        // Regular expression for validating a URL
+        QRegularExpression urlRegex("^(http|https)://");
+        QRegularExpressionMatch match = urlRegex.match(url);
+        if (match.hasMatch()) {
+            m_userURL = url;
+            qDebug() << "URL added:" << m_userURL;
+            QMessageBox::information(this, tr("URL Added"), tr("URL has been added successfully!"));
+            out << m_userURL;
+        } else {
+            qDebug() << "Invalid URL entered:" << url;
+            QMessageBox::warning(this, tr("Invalid URL"), tr("The entered text is not a valid URL. Please enter a valid URL starting with http:// or https://"));
+        }
+    }
 }

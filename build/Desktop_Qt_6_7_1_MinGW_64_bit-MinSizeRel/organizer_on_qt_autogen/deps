@@ -176,6 +176,7 @@ organizer_on_qt_autogen/timestamp: \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpainter.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpalette.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpen.h \
+	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpicture.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixmap.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpolygon.h \
@@ -195,6 +196,7 @@ organizer_on_qt_autogen/timestamp: \
 	D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QCalendarWidget \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QInputDialog \
+	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QLabel \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QListView \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QListWidget \
@@ -213,6 +215,7 @@ organizer_on_qt_autogen/timestamp: \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qframe.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qinputdialog.h \
+	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistview.h \
 	D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistwidget.h \

@@ -46,6 +46,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qglobalstatic.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qhash.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevice.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiodevicebase.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qiterable.h \
@@ -117,6 +118,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtversionchecks.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtypeinfo.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qtypes.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtCore/qurl.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qutf8stringview.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qvariant.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -139,12 +141,14 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpainter.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpalette.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpen.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpicture.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpixmap.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qpolygon.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qregion.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgb.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qrgba64.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtextoption.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtgui-config.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qtguiexports.h \
@@ -153,6 +157,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qvalidator.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QLabel \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QListView \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/QStyledItemDelegate \
@@ -162,6 +167,7 @@ D:/qt/organizer_on_qt/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/organizer_o
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+  D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qlistview.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/qtcreator/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
