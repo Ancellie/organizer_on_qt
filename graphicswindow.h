@@ -31,9 +31,14 @@ private slots:
 
     void on_graphicsWindow_destroyed();
 
+    void on_avgBtn_clicked();
+
+    void on_cmpBtn_clicked();
+
 private:
     bool isGroup;
     Ui::graphicsWindow *ui;
+    int getRow(QString name);
 
 protected:
     void closeEvent(QCloseEvent *event) override;

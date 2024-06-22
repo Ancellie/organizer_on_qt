@@ -245,3 +245,95 @@ void GraphicsWindow::on_changeButton_clicked()
     updatePlot();
 }
 
+
+void GraphicsWindow::on_avgBtn_clicked()
+{
+    bool ok;
+    QString rowName = QInputDialog::getText(this, tr("Get average value"),
+                                            tr("Row name:"), QLineEdit::Normal,
+                                            tr("Subject"), &ok);
+
+    if (!ok || rowName.isEmpty()) return;
+
+    int index = getRow(rowName);
+
+    if (index == -1) {
+        QMessageBox::warning(this, "Error", "Row not found.");
+        return;
+    }
+
+    double average = 0;
+    int itemCount = 0;
+
+    for (int i = 0; i < ui->tableWidget->columnCount(); i++) {
+        auto item = ui->tableWidget->item(index, i);
+        if (!item || item->text().isEmpty()) continue;
+        bool isDouble;
+        double value = item->text().toDouble(&isDouble);
+        if (!isDouble) continue;
+        average += value;
+        itemCount++;
+    }
+    QString outMsg = QString("Average grade for %1 is %2").arg(rowName).arg(average/itemCount, 0, 'f', 3);
+
+    QMessageBox::information(this, "Data", outMsg);
+}
+
+
+void GraphicsWindow::on_cmpBtn_clicked()
+{
+    bool ok;
+    QString firstRowName = QInputDialog::getText(this, tr("Compare"),
+                                            tr("Base row name:"), QLineEdit::Normal,
+                                            tr("Subject"), &ok);
+    if (!ok || firstRowName.isEmpty()) return;
+    QString secondRowName = QInputDialog::getText(this, tr("Compare"),
+                                             tr("Compare row name:"), QLineEdit::Normal,
+                                             tr("Subject"), &ok);
+    if (!ok || secondRowName.isEmpty()) return;
+
+    int firstRow = getRow(firstRowName);
+    int secondRow = getRow(secondRowName);
+
+    if (firstRow == -1 || secondRow == -1) {
+        QMessageBox::warning(this, "Error", "Row not found.");
+        return;
+    }
+
+    double fICount = 0, sICount = 0;
+
+    for (int i = 0; i < ui->tableWidget->columnCount(); i++) {
+        auto fItem = ui->tableWidget->item(firstRow, i);
+        auto sItem = ui->tableWidget->item(secondRow, i);
+
+        if (fItem && !fItem->text().isEmpty()) {
+            fItem->text().toDouble(&ok);
+            if (ok) fICount++;
+        }
+        if (sItem && !sItem->text().isEmpty()) {
+            sItem->text().toDouble(&ok);
+            if (ok) sICount++;
+        }
+    }
+
+    double diff = fICount / sICount * 100;
+    QString diffDir = diff < 0 ? "less" : "more";
+    QString msg = QString("%1 has %2\% %3 marks than %4")
+        .arg(firstRowName)
+        .arg(diff, 0, 'f', 2)
+        .arg(diffDir)
+        .arg(secondRow);
+    QMessageBox::information(this, "Data", msg);
+}
+
+int GraphicsWindow::getRow(QString name) {
+    for (int i = 0; i < ui->tableWidget->rowCount(); ++i)
+    {
+        if (ui->tableWidget->verticalHeaderItem(i)->text() != name) continue;
+
+        return i;
+    }
+
+    return -1;
+}
+
