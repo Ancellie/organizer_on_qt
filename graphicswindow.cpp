@@ -322,7 +322,7 @@ void GraphicsWindow::on_cmpBtn_clicked()
         .arg(firstRowName)
         .arg(diff, 0, 'f', 2)
         .arg(diffDir)
-        .arg(secondRow);
+        .arg(secondRowName);
     QMessageBox::information(this, "Data", msg);
 }
 
