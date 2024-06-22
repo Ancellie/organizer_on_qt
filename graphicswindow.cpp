@@ -316,8 +316,14 @@ void GraphicsWindow::on_cmpBtn_clicked()
         }
     }
 
-    double diff = fICount / sICount * 100;
+    if (fICount == 0) {
+        QMessageBox::information(this, "Data", QString("%1 has no valid marks").arg(firstRowName));
+        return;
+    }
+
+    double diff = (fICount - sICount) / fICount * 100;
     QString diffDir = diff < 0 ? "less" : "more";
+    diff = abs(diff);
     QString msg = QString("%1 has %2\% %3 marks than %4")
         .arg(firstRowName)
         .arg(diff, 0, 'f', 2)
